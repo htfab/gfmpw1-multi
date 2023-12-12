@@ -29,9 +29,7 @@
  *-------------------------------------------------------------
  */
 
-module user_project_wrapper #(
-    parameter BITS = 32
-) (
+module user_project_wrapper (
 `ifdef USE_POWER_PINS
     inout vdd,		// User area 5.0V supply
     inout vss,		// User area ground
@@ -66,44 +64,94 @@ module user_project_wrapper #(
     output [2:0] user_irq
 );
 
-/*--------------------------------------*/
-/* User project is instantiated  here   */
-/*--------------------------------------*/
+wire clk;
+wire rst_n;
+wire [`SEL_BITS-1:0] sel;
+wire [`INPUT_BITS-1:0] in;
+wire [`OUTPUT_BITS-1:0] out;
+wire [3:0] proj_clk;
+wire [3:0] proj_rst_n;
+wire [4*`INPUT_BITS-1:0] proj_in;
+wire [4*`OUTPUT_BITS-1:0] proj_out;
 
-user_proj_example mprj (
-`ifdef USE_POWER_PINS
-	.vdd(vdd),	// User area 1 1.8V power
-	.vss(vss),	// User area 1 digital ground
-`endif
+`define SEL_START 0
+`define SEL_END (`SEL_BITS-1)
+`define INPUT_START `SEL_BITS
+`define INPUT_END (`INPUT_START+`INPUT_BITS-1)
+`define OUTPUT_START (`INPUT_START+`INPUT_BITS)
+`define OUTPUT_END (`OUTPUT_START+`OUTPUT_BITS-1)
+`define UNUSED_START (`OUTPUT_START+`OUTPUT_BITS)
+`define UNUSED_END (`MPRJ_IO_PADS-1)
+`define UNUSED_BITS (`MPRJ_IO_PADS-`UNUSED_START)
 
-    .wb_clk_i(wb_clk_i),
-    .wb_rst_i(wb_rst_i),
+mux_wrapper mw (
+    .wb_clk_i,
+    .wb_rst_i,
+    .wbs_stb_i,
+    .wbs_cyc_i,
+    .wbs_we_i,
+    .wbs_sel_i,
+    .wbs_dat_i,
+    .wbs_adr_i,
+    .wbs_ack_o,
+    .wbs_dat_o,
+    .la_data_in,
+    .la_data_out,
+    .la_oenb,
+    .io_in,
+    .io_out,
+    .io_oeb,
+    .user_clock2,
+    .user_irq,
+    .clk,
+    .rst_n,
+    .sel,
+    .in,
+    .out
+);
 
-    // MGMT SoC Wishbone Slave
+input_mux im (
+    .sel,
+    .clk,
+    .rst_n,
+    .in,
+    .proj_clk,
+    .proj_rst_n,
+    .proj_in
+);
 
-    .wbs_cyc_i(wbs_cyc_i),
-    .wbs_stb_i(wbs_stb_i),
-    .wbs_we_i(wbs_we_i),
-    .wbs_sel_i(wbs_sel_i),
-    .wbs_adr_i(wbs_adr_i),
-    .wbs_dat_i(wbs_dat_i),
-    .wbs_ack_o(wbs_ack_o),
-    .wbs_dat_o(wbs_dat_o),
+rotfpga2a p0 (
+    .clk(proj_clk[0]),
+    .rst_n(proj_rst_n[0]),
+    .in(proj_in[`INPUT_BITS-1:0]),
+    .out(proj_out[`OUTPUT_BITS-1:0])
+);
 
-    // Logic Analyzer
+rotfpga2b p1 (
+    .clk(proj_clk[1]),
+    .rst_n(proj_rst_n[1]),
+    .in(proj_in[2*`INPUT_BITS-1:`INPUT_BITS]),
+    .out(proj_out[2*`OUTPUT_BITS-1:`OUTPUT_BITS])
+);
 
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
+totp p2 (
+    .clk(proj_clk[2]),
+    .rst_n(proj_rst_n[2]),
+    .in(proj_in[3*`INPUT_BITS-1:2*`INPUT_BITS]),
+    .out(proj_out[3*`OUTPUT_BITS-1:2*`OUTPUT_BITS])
+);
 
-    // IO Pads
+unigate p3 (
+    .clk(proj_clk[3]),
+    .rst_n(proj_rst_n[3]),
+    .in(proj_in[4*`INPUT_BITS-1:3*`INPUT_BITS]),
+    .out(proj_out[4*`OUTPUT_BITS-1:3*`OUTPUT_BITS])
+);
 
-    .io_in ({io_in[37:30],io_in[7:0]}),
-    .io_out({io_out[37:30],io_out[7:0]}),
-    .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
-
-    // IRQ
-    .irq(user_irq)
+output_mux om (
+    .sel,
+    .proj_out,
+    .out,
 );
 
 endmodule	// user_project_wrapper

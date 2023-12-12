@@ -39,8 +39,287 @@ module user_project_wrapper (user_clock2,
  output [31:0] wbs_dat_o;
  input [3:0] wbs_sel_i;
 
+ wire clk;
+ wire \in[0] ;
+ wire \in[10] ;
+ wire \in[11] ;
+ wire \in[12] ;
+ wire \in[13] ;
+ wire \in[14] ;
+ wire \in[15] ;
+ wire \in[16] ;
+ wire \in[17] ;
+ wire \in[18] ;
+ wire \in[1] ;
+ wire \in[2] ;
+ wire \in[3] ;
+ wire \in[4] ;
+ wire \in[5] ;
+ wire \in[6] ;
+ wire \in[7] ;
+ wire \in[8] ;
+ wire \in[9] ;
+ wire \out[0] ;
+ wire \out[10] ;
+ wire \out[11] ;
+ wire \out[1] ;
+ wire \out[2] ;
+ wire \out[3] ;
+ wire \out[4] ;
+ wire \out[5] ;
+ wire \out[6] ;
+ wire \out[7] ;
+ wire \out[8] ;
+ wire \out[9] ;
+ wire \proj_clk[0] ;
+ wire \proj_clk[1] ;
+ wire \proj_clk[2] ;
+ wire \proj_clk[3] ;
+ wire \proj_in[0] ;
+ wire \proj_in[10] ;
+ wire \proj_in[11] ;
+ wire \proj_in[12] ;
+ wire \proj_in[13] ;
+ wire \proj_in[14] ;
+ wire \proj_in[15] ;
+ wire \proj_in[16] ;
+ wire \proj_in[17] ;
+ wire \proj_in[18] ;
+ wire \proj_in[19] ;
+ wire \proj_in[1] ;
+ wire \proj_in[20] ;
+ wire \proj_in[21] ;
+ wire \proj_in[22] ;
+ wire \proj_in[23] ;
+ wire \proj_in[24] ;
+ wire \proj_in[25] ;
+ wire \proj_in[26] ;
+ wire \proj_in[27] ;
+ wire \proj_in[28] ;
+ wire \proj_in[29] ;
+ wire \proj_in[2] ;
+ wire \proj_in[30] ;
+ wire \proj_in[31] ;
+ wire \proj_in[32] ;
+ wire \proj_in[33] ;
+ wire \proj_in[34] ;
+ wire \proj_in[35] ;
+ wire \proj_in[36] ;
+ wire \proj_in[37] ;
+ wire \proj_in[38] ;
+ wire \proj_in[39] ;
+ wire \proj_in[3] ;
+ wire \proj_in[40] ;
+ wire \proj_in[41] ;
+ wire \proj_in[42] ;
+ wire \proj_in[43] ;
+ wire \proj_in[44] ;
+ wire \proj_in[45] ;
+ wire \proj_in[46] ;
+ wire \proj_in[47] ;
+ wire \proj_in[48] ;
+ wire \proj_in[49] ;
+ wire \proj_in[4] ;
+ wire \proj_in[50] ;
+ wire \proj_in[51] ;
+ wire \proj_in[52] ;
+ wire \proj_in[53] ;
+ wire \proj_in[54] ;
+ wire \proj_in[55] ;
+ wire \proj_in[56] ;
+ wire \proj_in[57] ;
+ wire \proj_in[58] ;
+ wire \proj_in[59] ;
+ wire \proj_in[5] ;
+ wire \proj_in[60] ;
+ wire \proj_in[61] ;
+ wire \proj_in[62] ;
+ wire \proj_in[63] ;
+ wire \proj_in[64] ;
+ wire \proj_in[65] ;
+ wire \proj_in[66] ;
+ wire \proj_in[67] ;
+ wire \proj_in[68] ;
+ wire \proj_in[69] ;
+ wire \proj_in[6] ;
+ wire \proj_in[70] ;
+ wire \proj_in[71] ;
+ wire \proj_in[72] ;
+ wire \proj_in[73] ;
+ wire \proj_in[74] ;
+ wire \proj_in[75] ;
+ wire \proj_in[7] ;
+ wire \proj_in[8] ;
+ wire \proj_in[9] ;
+ wire \proj_out[0] ;
+ wire \proj_out[10] ;
+ wire \proj_out[11] ;
+ wire \proj_out[12] ;
+ wire \proj_out[13] ;
+ wire \proj_out[14] ;
+ wire \proj_out[15] ;
+ wire \proj_out[16] ;
+ wire \proj_out[17] ;
+ wire \proj_out[18] ;
+ wire \proj_out[19] ;
+ wire \proj_out[1] ;
+ wire \proj_out[20] ;
+ wire \proj_out[21] ;
+ wire \proj_out[22] ;
+ wire \proj_out[23] ;
+ wire \proj_out[24] ;
+ wire \proj_out[25] ;
+ wire \proj_out[26] ;
+ wire \proj_out[27] ;
+ wire \proj_out[28] ;
+ wire \proj_out[29] ;
+ wire \proj_out[2] ;
+ wire \proj_out[30] ;
+ wire \proj_out[31] ;
+ wire \proj_out[32] ;
+ wire \proj_out[33] ;
+ wire \proj_out[34] ;
+ wire \proj_out[35] ;
+ wire \proj_out[36] ;
+ wire \proj_out[37] ;
+ wire \proj_out[38] ;
+ wire \proj_out[39] ;
+ wire \proj_out[3] ;
+ wire \proj_out[40] ;
+ wire \proj_out[41] ;
+ wire \proj_out[42] ;
+ wire \proj_out[43] ;
+ wire \proj_out[44] ;
+ wire \proj_out[45] ;
+ wire \proj_out[46] ;
+ wire \proj_out[47] ;
+ wire \proj_out[4] ;
+ wire \proj_out[5] ;
+ wire \proj_out[6] ;
+ wire \proj_out[7] ;
+ wire \proj_out[8] ;
+ wire \proj_out[9] ;
+ wire \proj_rst_n[0] ;
+ wire \proj_rst_n[1] ;
+ wire \proj_rst_n[2] ;
+ wire \proj_rst_n[3] ;
+ wire rst_n;
+ wire \sel[0] ;
+ wire \sel[1] ;
 
- user_proj_example mprj (.vdd(vdd),
+ input_mux im (.clk(clk),
+    .rst_n(rst_n),
+    .vdd(vdd),
+    .vss(vss),
+    .in({\in[18] ,
+    \in[17] ,
+    \in[16] ,
+    \in[15] ,
+    \in[14] ,
+    \in[13] ,
+    \in[12] ,
+    \in[11] ,
+    \in[10] ,
+    \in[9] ,
+    \in[8] ,
+    \in[7] ,
+    \in[6] ,
+    \in[5] ,
+    \in[4] ,
+    \in[3] ,
+    \in[2] ,
+    \in[1] ,
+    \in[0] }),
+    .proj_clk({\proj_clk[3] ,
+    \proj_clk[2] ,
+    \proj_clk[1] ,
+    \proj_clk[0] }),
+    .proj_in({\proj_in[75] ,
+    \proj_in[74] ,
+    \proj_in[73] ,
+    \proj_in[72] ,
+    \proj_in[71] ,
+    \proj_in[70] ,
+    \proj_in[69] ,
+    \proj_in[68] ,
+    \proj_in[67] ,
+    \proj_in[66] ,
+    \proj_in[65] ,
+    \proj_in[64] ,
+    \proj_in[63] ,
+    \proj_in[62] ,
+    \proj_in[61] ,
+    \proj_in[60] ,
+    \proj_in[59] ,
+    \proj_in[58] ,
+    \proj_in[57] ,
+    \proj_in[56] ,
+    \proj_in[55] ,
+    \proj_in[54] ,
+    \proj_in[53] ,
+    \proj_in[52] ,
+    \proj_in[51] ,
+    \proj_in[50] ,
+    \proj_in[49] ,
+    \proj_in[48] ,
+    \proj_in[47] ,
+    \proj_in[46] ,
+    \proj_in[45] ,
+    \proj_in[44] ,
+    \proj_in[43] ,
+    \proj_in[42] ,
+    \proj_in[41] ,
+    \proj_in[40] ,
+    \proj_in[39] ,
+    \proj_in[38] ,
+    \proj_in[37] ,
+    \proj_in[36] ,
+    \proj_in[35] ,
+    \proj_in[34] ,
+    \proj_in[33] ,
+    \proj_in[32] ,
+    \proj_in[31] ,
+    \proj_in[30] ,
+    \proj_in[29] ,
+    \proj_in[28] ,
+    \proj_in[27] ,
+    \proj_in[26] ,
+    \proj_in[25] ,
+    \proj_in[24] ,
+    \proj_in[23] ,
+    \proj_in[22] ,
+    \proj_in[21] ,
+    \proj_in[20] ,
+    \proj_in[19] ,
+    \proj_in[18] ,
+    \proj_in[17] ,
+    \proj_in[16] ,
+    \proj_in[15] ,
+    \proj_in[14] ,
+    \proj_in[13] ,
+    \proj_in[12] ,
+    \proj_in[11] ,
+    \proj_in[10] ,
+    \proj_in[9] ,
+    \proj_in[8] ,
+    \proj_in[7] ,
+    \proj_in[6] ,
+    \proj_in[5] ,
+    \proj_in[4] ,
+    \proj_in[3] ,
+    \proj_in[2] ,
+    \proj_in[1] ,
+    \proj_in[0] }),
+    .proj_rst_n({\proj_rst_n[3] ,
+    \proj_rst_n[2] ,
+    \proj_rst_n[1] ,
+    \proj_rst_n[0] }),
+    .sel({\sel[1] ,
+    \sel[0] }));
+ mux_wrapper mw (.clk(clk),
+    .rst_n(rst_n),
+    .user_clock2(user_clock2),
+    .vdd(vdd),
     .vss(vss),
     .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
@@ -48,6 +327,25 @@ module user_project_wrapper (user_clock2,
     .wbs_cyc_i(wbs_cyc_i),
     .wbs_stb_i(wbs_stb_i),
     .wbs_we_i(wbs_we_i),
+    .in({\in[18] ,
+    \in[17] ,
+    \in[16] ,
+    \in[15] ,
+    \in[14] ,
+    \in[13] ,
+    \in[12] ,
+    \in[11] ,
+    \in[10] ,
+    \in[9] ,
+    \in[8] ,
+    \in[7] ,
+    \in[6] ,
+    \in[5] ,
+    \in[4] ,
+    \in[3] ,
+    \in[2] ,
+    \in[1] ,
+    \in[0] }),
     .io_in({io_in[37],
     io_in[36],
     io_in[35],
@@ -56,6 +354,28 @@ module user_project_wrapper (user_clock2,
     io_in[32],
     io_in[31],
     io_in[30],
+    io_in[29],
+    io_in[28],
+    io_in[27],
+    io_in[26],
+    io_in[25],
+    io_in[24],
+    io_in[23],
+    io_in[22],
+    io_in[21],
+    io_in[20],
+    io_in[19],
+    io_in[18],
+    io_in[17],
+    io_in[16],
+    io_in[15],
+    io_in[14],
+    io_in[13],
+    io_in[12],
+    io_in[11],
+    io_in[10],
+    io_in[9],
+    io_in[8],
     io_in[7],
     io_in[6],
     io_in[5],
@@ -72,6 +392,28 @@ module user_project_wrapper (user_clock2,
     io_oeb[32],
     io_oeb[31],
     io_oeb[30],
+    io_oeb[29],
+    io_oeb[28],
+    io_oeb[27],
+    io_oeb[26],
+    io_oeb[25],
+    io_oeb[24],
+    io_oeb[23],
+    io_oeb[22],
+    io_oeb[21],
+    io_oeb[20],
+    io_oeb[19],
+    io_oeb[18],
+    io_oeb[17],
+    io_oeb[16],
+    io_oeb[15],
+    io_oeb[14],
+    io_oeb[13],
+    io_oeb[12],
+    io_oeb[11],
+    io_oeb[10],
+    io_oeb[9],
+    io_oeb[8],
     io_oeb[7],
     io_oeb[6],
     io_oeb[5],
@@ -88,6 +430,28 @@ module user_project_wrapper (user_clock2,
     io_out[32],
     io_out[31],
     io_out[30],
+    io_out[29],
+    io_out[28],
+    io_out[27],
+    io_out[26],
+    io_out[25],
+    io_out[24],
+    io_out[23],
+    io_out[22],
+    io_out[21],
+    io_out[20],
+    io_out[19],
+    io_out[18],
+    io_out[17],
+    io_out[16],
+    io_out[15],
+    io_out[14],
+    io_out[13],
+    io_out[12],
+    io_out[11],
+    io_out[10],
+    io_out[9],
+    io_out[8],
     io_out[7],
     io_out[6],
     io_out[5],
@@ -96,9 +460,6 @@ module user_project_wrapper (user_clock2,
     io_out[2],
     io_out[1],
     io_out[0]}),
-    .irq({user_irq[2],
-    user_irq[1],
-    user_irq[0]}),
     .la_data_in({la_data_in[63],
     la_data_in[62],
     la_data_in[61],
@@ -291,6 +652,23 @@ module user_project_wrapper (user_clock2,
     la_oenb[2],
     la_oenb[1],
     la_oenb[0]}),
+    .out({\out[11] ,
+    \out[10] ,
+    \out[9] ,
+    \out[8] ,
+    \out[7] ,
+    \out[6] ,
+    \out[5] ,
+    \out[4] ,
+    \out[3] ,
+    \out[2] ,
+    \out[1] ,
+    \out[0] }),
+    .sel({\sel[1] ,
+    \sel[0] }),
+    .user_irq({user_irq[2],
+    user_irq[1],
+    user_irq[0]}),
     .wbs_adr_i({wbs_adr_i[31],
     wbs_adr_i[30],
     wbs_adr_i[29],
@@ -391,4 +769,208 @@ module user_project_wrapper (user_clock2,
     wbs_sel_i[2],
     wbs_sel_i[1],
     wbs_sel_i[0]}));
+ output_mux om (.vdd(vdd),
+    .vss(vss),
+    .out({\out[11] ,
+    \out[10] ,
+    \out[9] ,
+    \out[8] ,
+    \out[7] ,
+    \out[6] ,
+    \out[5] ,
+    \out[4] ,
+    \out[3] ,
+    \out[2] ,
+    \out[1] ,
+    \out[0] }),
+    .proj_out({\proj_out[47] ,
+    \proj_out[46] ,
+    \proj_out[45] ,
+    \proj_out[44] ,
+    \proj_out[43] ,
+    \proj_out[42] ,
+    \proj_out[41] ,
+    \proj_out[40] ,
+    \proj_out[39] ,
+    \proj_out[38] ,
+    \proj_out[37] ,
+    \proj_out[36] ,
+    \proj_out[35] ,
+    \proj_out[34] ,
+    \proj_out[33] ,
+    \proj_out[32] ,
+    \proj_out[31] ,
+    \proj_out[30] ,
+    \proj_out[29] ,
+    \proj_out[28] ,
+    \proj_out[27] ,
+    \proj_out[26] ,
+    \proj_out[25] ,
+    \proj_out[24] ,
+    \proj_out[23] ,
+    \proj_out[22] ,
+    \proj_out[21] ,
+    \proj_out[20] ,
+    \proj_out[19] ,
+    \proj_out[18] ,
+    \proj_out[17] ,
+    \proj_out[16] ,
+    \proj_out[15] ,
+    \proj_out[14] ,
+    \proj_out[13] ,
+    \proj_out[12] ,
+    \proj_out[11] ,
+    \proj_out[10] ,
+    \proj_out[9] ,
+    \proj_out[8] ,
+    \proj_out[7] ,
+    \proj_out[6] ,
+    \proj_out[5] ,
+    \proj_out[4] ,
+    \proj_out[3] ,
+    \proj_out[2] ,
+    \proj_out[1] ,
+    \proj_out[0] }),
+    .sel({\sel[1] ,
+    \sel[0] }));
+ rotfpga2a p0 (.clk(\proj_clk[0] ),
+    .rst_n(\proj_rst_n[0] ),
+    .vdd(vdd),
+    .vss(vss),
+    .in({\proj_in[18] ,
+    \proj_in[17] ,
+    \proj_in[16] ,
+    \proj_in[15] ,
+    \proj_in[14] ,
+    \proj_in[13] ,
+    \proj_in[12] ,
+    \proj_in[11] ,
+    \proj_in[10] ,
+    \proj_in[9] ,
+    \proj_in[8] ,
+    \proj_in[7] ,
+    \proj_in[6] ,
+    \proj_in[5] ,
+    \proj_in[4] ,
+    \proj_in[3] ,
+    \proj_in[2] ,
+    \proj_in[1] ,
+    \proj_in[0] }),
+    .out({\proj_out[11] ,
+    \proj_out[10] ,
+    \proj_out[9] ,
+    \proj_out[8] ,
+    \proj_out[7] ,
+    \proj_out[6] ,
+    \proj_out[5] ,
+    \proj_out[4] ,
+    \proj_out[3] ,
+    \proj_out[2] ,
+    \proj_out[1] ,
+    \proj_out[0] }));
+ rotfpga2b p1 (.clk(\proj_clk[1] ),
+    .rst_n(\proj_rst_n[1] ),
+    .vdd(vdd),
+    .vss(vss),
+    .in({\proj_in[37] ,
+    \proj_in[36] ,
+    \proj_in[35] ,
+    \proj_in[34] ,
+    \proj_in[33] ,
+    \proj_in[32] ,
+    \proj_in[31] ,
+    \proj_in[30] ,
+    \proj_in[29] ,
+    \proj_in[28] ,
+    \proj_in[27] ,
+    \proj_in[26] ,
+    \proj_in[25] ,
+    \proj_in[24] ,
+    \proj_in[23] ,
+    \proj_in[22] ,
+    \proj_in[21] ,
+    \proj_in[20] ,
+    \proj_in[19] }),
+    .out({\proj_out[23] ,
+    \proj_out[22] ,
+    \proj_out[21] ,
+    \proj_out[20] ,
+    \proj_out[19] ,
+    \proj_out[18] ,
+    \proj_out[17] ,
+    \proj_out[16] ,
+    \proj_out[15] ,
+    \proj_out[14] ,
+    \proj_out[13] ,
+    \proj_out[12] }));
+ totp p2 (.clk(\proj_clk[2] ),
+    .rst_n(\proj_rst_n[2] ),
+    .vdd(vdd),
+    .vss(vss),
+    .in({\proj_in[56] ,
+    \proj_in[55] ,
+    \proj_in[54] ,
+    \proj_in[53] ,
+    \proj_in[52] ,
+    \proj_in[51] ,
+    \proj_in[50] ,
+    \proj_in[49] ,
+    \proj_in[48] ,
+    \proj_in[47] ,
+    \proj_in[46] ,
+    \proj_in[45] ,
+    \proj_in[44] ,
+    \proj_in[43] ,
+    \proj_in[42] ,
+    \proj_in[41] ,
+    \proj_in[40] ,
+    \proj_in[39] ,
+    \proj_in[38] }),
+    .out({\proj_out[35] ,
+    \proj_out[34] ,
+    \proj_out[33] ,
+    \proj_out[32] ,
+    \proj_out[31] ,
+    \proj_out[30] ,
+    \proj_out[29] ,
+    \proj_out[28] ,
+    \proj_out[27] ,
+    \proj_out[26] ,
+    \proj_out[25] ,
+    \proj_out[24] }));
+ unigate p3 (.clk(\proj_clk[3] ),
+    .rst_n(\proj_rst_n[3] ),
+    .vdd(vdd),
+    .vss(vss),
+    .in({\proj_in[75] ,
+    \proj_in[74] ,
+    \proj_in[73] ,
+    \proj_in[72] ,
+    \proj_in[71] ,
+    \proj_in[70] ,
+    \proj_in[69] ,
+    \proj_in[68] ,
+    \proj_in[67] ,
+    \proj_in[66] ,
+    \proj_in[65] ,
+    \proj_in[64] ,
+    \proj_in[63] ,
+    \proj_in[62] ,
+    \proj_in[61] ,
+    \proj_in[60] ,
+    \proj_in[59] ,
+    \proj_in[58] ,
+    \proj_in[57] }),
+    .out({\proj_out[47] ,
+    \proj_out[46] ,
+    \proj_out[45] ,
+    \proj_out[44] ,
+    \proj_out[43] ,
+    \proj_out[42] ,
+    \proj_out[41] ,
+    \proj_out[40] ,
+    \proj_out[39] ,
+    \proj_out[38] ,
+    \proj_out[37] ,
+    \proj_out[36] }));
 endmodule

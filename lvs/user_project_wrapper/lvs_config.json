@@ -22,7 +22,14 @@
         "$PDK_ROOT/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice"
     ],
     "LVS_VERILOG_FILES": [
-        "$UPRJ_ROOT/verilog/gl/user_proj_example.v",
+        "$UPRJ_ROOT/verilog/gl/mux_wrapper.v",
+        "$UPRJ_ROOT/verilog/gl/input_mux.v",
+        "$UPRJ_ROOT/verilog/gl/output_mux.v",
+        "$UPRJ_ROOT/verilog/gl/loopback.v",
+        "$UPRJ_ROOT/verilog/gl/rotfpga2a.v",
+        "$UPRJ_ROOT/verilog/gl/rotfpga2b.v",
+        "$UPRJ_ROOT/verilog/gl/totp.v",
+        "$UPRJ_ROOT/verilog/gl/unigate.v",
         "$UPRJ_ROOT/verilog/gl/$TOP_SOURCE.v"
     ],
     "LAYOUT_FILE": "$UPRJ_ROOT/gds/$TOP_LAYOUT.gds"
