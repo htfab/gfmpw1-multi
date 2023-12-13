@@ -39,7 +39,7 @@ gf180mcu_fd_sc_mcu9t5v0__inv_1 ring_osc_2(.I(ring[2]), .ZN(ring[3]));
     end
 `else
     assign ring[0] = ring[3];
-    gf180mcu_fd_sc_mcu9t5v0__icgtp_1 clock_gate(.CLK(ring[0]), .E(running), .TE(1'b0), .Q(counter[0]));
+    gf180mcu_fd_sc_mcu9t5v0__icgtp_2 clock_gate(.CLK(ring[0]), .E(running), .TE(1'b0), .Q(counter[0]));
     gf180mcu_fd_sc_mcu9t5v0__inv_1 clock_gate_inv(.I(counter[0]), .ZN(counter_n[0]));
 `endif
 generate genvar i;  

@@ -266,7 +266,7 @@ gf180mcu_fd_sc_mcu9t5v0__clkinv_20 clkinv_20_inst(.I(in[0]), .ZN(out_notouch_[20
 gf180mcu_fd_sc_mcu9t5v0__icgtn_1 icgtn_1_inst(.CLKN(in[0]), .E(in[1]), .TE(in[2]), .Q(out_notouch_[204]));
 gf180mcu_fd_sc_mcu9t5v0__icgtn_2 icgtn_2_inst(.CLKN(in[0]), .E(in[1]), .TE(in[2]), .Q(out_notouch_[205]));
 gf180mcu_fd_sc_mcu9t5v0__icgtn_4 icgtn_4_inst(.CLKN(in[0]), .E(in[1]), .TE(in[2]), .Q(out_notouch_[206]));
-gf180mcu_fd_sc_mcu9t5v0__icgtp_1 icgtp_1_inst(.CLK(in[0]), .E(in[1]), .TE(in[2]), .Q(out_notouch_[207]));
+assign out_notouch_[207] = 1'b0; //gf180mcu_fd_sc_mcu9t5v0__icgtp_1 icgtp_1_inst(.CLK(in[0]), .E(in[1]), .TE(in[2]), .Q(out_notouch_[207])); fails at drc
 gf180mcu_fd_sc_mcu9t5v0__icgtp_2 icgtp_2_inst(.CLK(in[0]), .E(in[1]), .TE(in[2]), .Q(out_notouch_[208]));
 gf180mcu_fd_sc_mcu9t5v0__icgtp_4 icgtp_4_inst(.CLK(in[0]), .E(in[1]), .TE(in[2]), .Q(out_notouch_[209]));
 
