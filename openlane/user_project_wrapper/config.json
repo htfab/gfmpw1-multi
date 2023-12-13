@@ -20,7 +20,9 @@
         "dir::../../verilog/gl/totp.v",
         "dir::../../verilog/gl/unigate.v",
         "dir::../../verilog/gl/cells7.v",
-        "dir::../../verilog/gl/loopback7.v"
+        "dir::../../verilog/gl/cells9.v",
+        "dir::../../verilog/gl/loopback7.v",
+        "dir::../../verilog/gl/loopback9.v"
     ],
     "EXTRA_LEFS": [
         "dir::../../lef/caravel_if.lef",
@@ -31,7 +33,9 @@
         "dir::../../lef/totp.lef",
         "dir::../../lef/unigate.lef",
         "dir::../../lef/cells7.lef",
-        "dir::../../lef/loopback7.lef"
+        "dir::../../lef/cells9.lef",
+        "dir::../../lef/loopback7.lef",
+        "dir::../../lef/loopback9.lef"
     ],
     "EXTRA_GDS_FILES": [
         "dir::../../gds/caravel_if.gds",
@@ -42,7 +46,9 @@
         "dir::../../gds/totp.gds",
         "dir::../../gds/unigate.gds",
         "dir::../../gds/cells7.gds",
-        "dir::../../gds/loopback7.gds"
+        "dir::../../gds/cells9.gds",
+        "dir::../../gds/loopback7.gds",
+        "dir::../../gds/loopback9.gds"
     ],
     "EXTRA_LIBS": [
         "dir::../../lib/caravel_if.lib",
@@ -53,7 +59,9 @@
         "dir::../../lib/totp.lib",
         "dir::../../lib/unigate.lib",
         "dir::../../lib/cells7.lib",
-        "dir::../../lib/loopback7.lib"
+        "dir::../../lib/cells9.lib",
+        "dir::../../lib/loopback7.lib",
+        "dir::../../lib/loopback9.lib"
     ],
     "EXTRA_SPEFS": [
         "caravel_if",
@@ -88,10 +96,18 @@
         "dir::../../spef/multicorner/cells7.min.spef",
         "dir::../../spef/multicorner/cells7.nom.spef",
         "dir::../../spef/multicorner/cells7.max.spef",
+        "cells9",
+        "dir::../../spef/multicorner/cells9.min.spef",
+        "dir::../../spef/multicorner/cells9.nom.spef",
+        "dir::../../spef/multicorner/cells9.max.spef",
         "loopback7",
         "dir::../../spef/multicorner/loopback7.min.spef",
         "dir::../../spef/multicorner/loopback7.nom.spef",
-        "dir::../../spef/multicorner/loopback7.max.spef"
+        "dir::../../spef/multicorner/loopback7.max.spef",
+        "loopback9",
+        "dir::../../spef/multicorner/loopback9.min.spef",
+        "dir::../../spef/multicorner/loopback9.nom.spef",
+        "dir::../../spef/multicorner/loopback9.max.spef"
     ],
     "FP_PDN_MACRO_HOOKS": [
         "ci vdd vss vdd vss,",

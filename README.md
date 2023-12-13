@@ -6,4 +6,6 @@ Contains ports of the following projects to GF180:
 - [totp](https://github.com/htfab/totp)
 - [unigate-sky](https://github.com/htfab/unigate-sky)
 - [microtapeout](https://github.com/htfab/microtapeout) with 7-track cells
+- [microtapeout](https://github.com/htfab/microtapeout) with 9-track cells
 - loopback test with 7-track cells
+- loopback test with 9-track cells
