@@ -127,20 +127,8 @@
 + out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] rst_n vdd vss
 .ends
 
-* Black-box entry subcircuit for cells9 abstract view
-.subckt cells9 clk in[0] in[10] in[11] in[12] in[13] in[14] in[15] in[16] in[17] in[1]
-+ in[2] in[3] in[4] in[5] in[6] in[7] in[8] in[9] out[0] out[10] out[11] out[1] out[2]
-+ out[3] out[4] out[5] out[6] out[7] out[8] out[9] rst_n vdd vss
-.ends
-
 * Black-box entry subcircuit for loopback7 abstract view
 .subckt loopback7 clk in[0] in[10] in[11] in[12] in[13] in[14] in[15] in[16] in[17]
-+ in[1] in[2] in[3] in[4] in[5] in[6] in[7] in[8] in[9] out[0] out[10] out[11] out[1]
-+ out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] rst_n vdd vss
-.ends
-
-* Black-box entry subcircuit for loopback9 abstract view
-.subckt loopback9 clk in[0] in[10] in[11] in[12] in[13] in[14] in[15] in[16] in[17]
 + in[1] in[2] in[3] in[4] in[5] in[6] in[7] in[8] in[9] out[0] out[10] out[11] out[1]
 + out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] rst_n vdd vss
 .ends
@@ -359,7 +347,7 @@ Xp5 proj_clk\[3\] proj_in\[90\] proj_in\[100\] proj_in\[101\] proj_in\[102\] pro
 + proj_in\[93\] proj_in\[94\] proj_in\[95\] proj_in\[96\] proj_in\[97\] proj_in\[98\]
 + proj_in\[99\] proj_out\[60\] proj_out\[70\] proj_out\[71\] proj_out\[61\] proj_out\[62\]
 + proj_out\[63\] proj_out\[64\] proj_out\[65\] proj_out\[66\] proj_out\[67\] proj_out\[68\]
-+ proj_out\[69\] proj_rst_n\[3\] vdd vss cells9
++ proj_out\[69\] proj_rst_n\[3\] vdd vss cells7
 Xp6 proj_clk\[3\] proj_in\[108\] proj_in\[118\] proj_in\[119\] proj_in\[120\] proj_in\[121\]
 + proj_in\[122\] proj_in\[123\] proj_in\[124\] proj_in\[125\] proj_in\[109\] proj_in\[110\]
 + proj_in\[111\] proj_in\[112\] proj_in\[113\] proj_in\[114\] proj_in\[115\] proj_in\[116\]
@@ -371,7 +359,7 @@ Xp7 proj_clk\[3\] proj_in\[126\] proj_in\[136\] proj_in\[137\] proj_in\[138\] pr
 + proj_in\[129\] proj_in\[130\] proj_in\[131\] proj_in\[132\] proj_in\[133\] proj_in\[134\]
 + proj_in\[135\] proj_out\[84\] proj_out\[94\] proj_out\[95\] proj_out\[85\] proj_out\[86\]
 + proj_out\[87\] proj_out\[88\] proj_out\[89\] proj_out\[90\] proj_out\[91\] proj_out\[92\]
-+ proj_out\[93\] proj_rst_n\[3\] vdd vss loopback9
++ proj_out\[93\] proj_rst_n\[3\] vdd vss loopback7
 Xom out\[0\] out\[10\] out\[11\] out\[1\] out\[2\] out\[3\] out\[4\] out\[5\] out\[6\]
 + out\[7\] out\[8\] out\[9\] proj_out\[0\] proj_out\[10\] proj_out\[11\] proj_out\[12\]
 + proj_out\[13\] proj_out\[14\] proj_out\[15\] proj_out\[16\] proj_out\[17\] proj_out\[18\]

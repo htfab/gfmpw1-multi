@@ -1,6 +1,6 @@
 {
     "PDK": "gf180mcuD",
-    "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu9t5v0",
+    "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
     "DESIGN_NAME": "loopback9",
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/params.v",
@@ -25,12 +25,6 @@
     ],
     "BASE_SDC_FILE": "dir::base_loopback9.sdc",
     "RUN_HEURISTIC_DIODE_INSERTION": 1,
-    "PL_RESIZER_DESIGN_OPTIMIZATIONS": 0,
-    "PL_RESIZER_TIMING_OPTIMIZATIONS": 0,
-    "GLB_RESIZER_DESIGN_OPTIMIZATIONS": 0,
-    "GLB_RESIZER_TIMING_OPTIMIZATIONS": 0,
-    "RUN_KLAYOUT": 0,
-    "RUN_KLAYOUT_XOR": 0,
     "RUN_CVC": 1,
     "QUIT_ON_LINTER_ERRORS": 0
 }

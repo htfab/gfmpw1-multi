@@ -161,7 +161,7 @@ cells7 p4 (
     .out(proj_out[4*`OUTPUT_BITS+:`OUTPUT_BITS])
 );
 
-cells9 p5 (
+cells7 p5 (
     .clk(proj_clk[3]),
     .rst_n(proj_rst_n[3]),
     .in(proj_in[5*`INPUT_BITS+:`INPUT_BITS]),
@@ -175,7 +175,7 @@ loopback7 p6 (
     .out(proj_out[6*`OUTPUT_BITS+:`OUTPUT_BITS])
 );
 
-loopback9 p7 (
+loopback7 p7 (
     .clk(proj_clk[3]),
     .rst_n(proj_rst_n[3]),
     .in(proj_in[7*`INPUT_BITS+:`INPUT_BITS]),
