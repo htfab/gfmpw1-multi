@@ -14,7 +14,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.410400 ;
     PORT
       LAYER Metal2 ;
-        RECT 73.920 0.000 74.480 4.000 ;
+        RECT 171.360 0.000 171.920 4.000 ;
     END
   END clk
   PIN in[0]
@@ -24,7 +24,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.410400 ;
     PORT
       LAYER Metal2 ;
-        RECT 124.320 196.000 124.880 200.000 ;
+        RECT 13.440 196.000 14.000 200.000 ;
     END
   END in[0]
   PIN in[10]
@@ -34,17 +34,17 @@ MACRO input_mux
     ANTENNADIFFAREA 0.410400 ;
     PORT
       LAYER Metal2 ;
-        RECT 77.280 0.000 77.840 4.000 ;
+        RECT 26.880 0.000 27.440 4.000 ;
     END
   END in[10]
   PIN in[11]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.741000 ;
+    ANTENNAGATEAREA 0.498500 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
       LAYER Metal2 ;
-        RECT 117.600 0.000 118.160 4.000 ;
+        RECT 40.320 0.000 40.880 4.000 ;
     END
   END in[11]
   PIN in[12]
@@ -53,18 +53,18 @@ MACRO input_mux
     ANTENNAGATEAREA 0.498500 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 13.440 200.000 14.000 ;
+      LAYER Metal2 ;
+        RECT 50.400 0.000 50.960 4.000 ;
     END
   END in[12]
   PIN in[13]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.498500 ;
+    ANTENNAGATEAREA 0.741000 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 40.320 200.000 40.880 ;
+      LAYER Metal2 ;
+        RECT 47.040 0.000 47.600 4.000 ;
     END
   END in[13]
   PIN in[14]
@@ -73,8 +73,8 @@ MACRO input_mux
     ANTENNAGATEAREA 0.741000 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 47.040 200.000 47.600 ;
+      LAYER Metal2 ;
+        RECT 43.680 0.000 44.240 4.000 ;
     END
   END in[14]
   PIN in[15]
@@ -83,48 +83,38 @@ MACRO input_mux
     ANTENNAGATEAREA 0.741000 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 57.120 200.000 57.680 ;
+      LAYER Metal2 ;
+        RECT 77.280 0.000 77.840 4.000 ;
     END
   END in[15]
   PIN in[16]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    ANTENNAGATEAREA 0.741000 ;
-    ANTENNADIFFAREA 0.410400 ;
-    PORT
-      LAYER Metal3 ;
-        RECT 0.000 63.840 4.000 64.400 ;
-    END
-  END in[16]
-  PIN in[17]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    ANTENNAGATEAREA 0.498500 ;
-    ANTENNADIFFAREA 0.410400 ;
-    PORT
-      LAYER Metal3 ;
-        RECT 0.000 131.040 4.000 131.600 ;
-    END
-  END in[17]
-  PIN in[18]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    ANTENNAGATEAREA 0.498500 ;
-    ANTENNADIFFAREA 0.410400 ;
-    PORT
-      LAYER Metal3 ;
-        RECT 0.000 124.320 4.000 124.880 ;
-    END
-  END in[18]
-  PIN in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.498500 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
       LAYER Metal2 ;
+        RECT 33.600 0.000 34.160 4.000 ;
+    END
+  END in[16]
+  PIN in[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    ANTENNADIFFAREA 0.410400 ;
+    PORT
+      LAYER Metal2 ;
         RECT 73.920 196.000 74.480 200.000 ;
+    END
+  END in[17]
+  PIN in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    ANTENNADIFFAREA 0.410400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 30.240 196.000 30.800 200.000 ;
     END
   END in[1]
   PIN in[2]
@@ -134,17 +124,17 @@ MACRO input_mux
     ANTENNADIFFAREA 0.410400 ;
     PORT
       LAYER Metal2 ;
-        RECT 107.520 196.000 108.080 200.000 ;
+        RECT 33.600 196.000 34.160 200.000 ;
     END
   END in[2]
   PIN in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.498500 ;
+    ANTENNAGATEAREA 0.741000 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
       LAYER Metal2 ;
-        RECT 80.640 196.000 81.200 200.000 ;
+        RECT 20.160 196.000 20.720 200.000 ;
     END
   END in[3]
   PIN in[4]
@@ -153,8 +143,8 @@ MACRO input_mux
     ANTENNAGATEAREA 0.498500 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 184.800 200.000 185.360 ;
+      LAYER Metal2 ;
+        RECT 47.040 196.000 47.600 200.000 ;
     END
   END in[4]
   PIN in[5]
@@ -163,8 +153,8 @@ MACRO input_mux
     ANTENNAGATEAREA 0.498500 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 161.280 200.000 161.840 ;
+      LAYER Metal2 ;
+        RECT 26.880 196.000 27.440 200.000 ;
     END
   END in[5]
   PIN in[6]
@@ -174,37 +164,37 @@ MACRO input_mux
     ANTENNADIFFAREA 0.410400 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 178.080 200.000 178.640 ;
+        RECT 0.000 164.640 4.000 165.200 ;
     END
   END in[6]
   PIN in[7]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.741000 ;
+    ANTENNAGATEAREA 0.498500 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 127.680 200.000 128.240 ;
+        RECT 0.000 97.440 4.000 98.000 ;
     END
   END in[7]
   PIN in[8]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.741000 ;
+    ANTENNAGATEAREA 0.498500 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
-      LAYER Metal2 ;
-        RECT 124.320 0.000 124.880 4.000 ;
+      LAYER Metal3 ;
+        RECT 0.000 94.080 4.000 94.640 ;
     END
   END in[8]
   PIN in[9]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.741000 ;
+    ANTENNAGATEAREA 0.498500 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
       LAYER Metal2 ;
-        RECT 127.680 0.000 128.240 4.000 ;
+        RECT 168.000 0.000 168.560 4.000 ;
     END
   END in[9]
   PIN proj_clk[0]
@@ -213,7 +203,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.897600 ;
     PORT
       LAYER Metal2 ;
-        RECT 94.080 0.000 94.640 4.000 ;
+        RECT 164.640 0.000 165.200 4.000 ;
     END
   END proj_clk[0]
   PIN proj_clk[1]
@@ -222,7 +212,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.897600 ;
     PORT
       LAYER Metal2 ;
-        RECT 97.440 0.000 98.000 4.000 ;
+        RECT 161.280 0.000 161.840 4.000 ;
     END
   END proj_clk[1]
   PIN proj_clk[2]
@@ -231,7 +221,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.897600 ;
     PORT
       LAYER Metal2 ;
-        RECT 80.640 0.000 81.200 4.000 ;
+        RECT 144.480 0.000 145.040 4.000 ;
     END
   END proj_clk[2]
   PIN proj_clk[3]
@@ -240,37 +230,73 @@ MACRO input_mux
     ANTENNADIFFAREA 0.897600 ;
     PORT
       LAYER Metal2 ;
-        RECT 84.000 0.000 84.560 4.000 ;
+        RECT 154.560 0.000 155.120 4.000 ;
     END
   END proj_clk[3]
+  PIN proj_clk[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.897600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 114.240 0.000 114.800 4.000 ;
+    END
+  END proj_clk[4]
+  PIN proj_clk[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.897600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 147.840 0.000 148.400 4.000 ;
+    END
+  END proj_clk[5]
+  PIN proj_clk[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.897600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 124.320 0.000 124.880 4.000 ;
+    END
+  END proj_clk[6]
+  PIN proj_clk[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.897600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 131.040 0.000 131.600 4.000 ;
+    END
+  END proj_clk[7]
   PIN proj_in[0]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 100.800 196.000 101.360 200.000 ;
+        RECT 181.440 196.000 182.000 200.000 ;
     END
   END proj_in[0]
-  PIN proj_in[10]
+  PIN proj_in[100]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 53.760 200.000 54.320 ;
+        RECT 196.000 16.800 200.000 17.360 ;
     END
-  END proj_in[10]
-  PIN proj_in[11]
+  END proj_in[100]
+  PIN proj_in[101]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 60.480 200.000 61.040 ;
+        RECT 196.000 36.960 200.000 37.520 ;
     END
-  END proj_in[11]
-  PIN proj_in[12]
+  END proj_in[101]
+  PIN proj_in[102]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
@@ -278,17 +304,332 @@ MACRO input_mux
       LAYER Metal3 ;
         RECT 196.000 77.280 200.000 77.840 ;
     END
-  END proj_in[12]
-  PIN proj_in[13]
+  END proj_in[102]
+  PIN proj_in[103]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 117.600 0.000 118.160 4.000 ;
+    END
+  END proj_in[103]
+  PIN proj_in[104]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 127.680 0.000 128.240 4.000 ;
+    END
+  END proj_in[104]
+  PIN proj_in[105]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 120.960 0.000 121.520 4.000 ;
+    END
+  END proj_in[105]
+  PIN proj_in[106]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 63.840 200.000 64.400 ;
+        RECT 196.000 26.880 200.000 27.440 ;
     END
-  END proj_in[13]
-  PIN proj_in[14]
+  END proj_in[106]
+  PIN proj_in[107]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 114.240 196.000 114.800 200.000 ;
+    END
+  END proj_in[107]
+  PIN proj_in[108]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 80.640 196.000 81.200 200.000 ;
+    END
+  END proj_in[108]
+  PIN proj_in[109]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 174.720 196.000 175.280 200.000 ;
+    END
+  END proj_in[109]
+  PIN proj_in[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 40.320 200.000 40.880 ;
+    END
+  END proj_in[10]
+  PIN proj_in[110]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 90.720 196.000 91.280 200.000 ;
+    END
+  END proj_in[110]
+  PIN proj_in[111]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 87.360 196.000 87.920 200.000 ;
+    END
+  END proj_in[111]
+  PIN proj_in[112]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 100.800 196.000 101.360 200.000 ;
+    END
+  END proj_in[112]
+  PIN proj_in[113]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 94.080 196.000 94.640 200.000 ;
+    END
+  END proj_in[113]
+  PIN proj_in[114]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 171.360 196.000 171.920 200.000 ;
+    END
+  END proj_in[114]
+  PIN proj_in[115]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 104.160 196.000 104.720 200.000 ;
+    END
+  END proj_in[115]
+  PIN proj_in[116]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 104.160 0.000 104.720 4.000 ;
+    END
+  END proj_in[116]
+  PIN proj_in[117]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 97.440 0.000 98.000 4.000 ;
+    END
+  END proj_in[117]
+  PIN proj_in[118]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 84.000 0.000 84.560 4.000 ;
+    END
+  END proj_in[118]
+  PIN proj_in[119]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 30.240 0.000 30.800 4.000 ;
+    END
+  END proj_in[119]
+  PIN proj_in[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 47.040 200.000 47.600 ;
+    END
+  END proj_in[11]
+  PIN proj_in[120]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 90.720 0.000 91.280 4.000 ;
+    END
+  END proj_in[120]
+  PIN proj_in[121]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 94.080 0.000 94.640 4.000 ;
+    END
+  END proj_in[121]
+  PIN proj_in[122]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 80.640 0.000 81.200 4.000 ;
+    END
+  END proj_in[122]
+  PIN proj_in[123]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 87.360 0.000 87.920 4.000 ;
+    END
+  END proj_in[123]
+  PIN proj_in[124]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 36.960 0.000 37.520 4.000 ;
+    END
+  END proj_in[124]
+  PIN proj_in[125]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 84.000 196.000 84.560 200.000 ;
+    END
+  END proj_in[125]
+  PIN proj_in[126]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 154.560 196.000 155.120 200.000 ;
+    END
+  END proj_in[126]
+  PIN proj_in[127]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 134.400 196.000 134.960 200.000 ;
+    END
+  END proj_in[127]
+  PIN proj_in[128]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 147.840 196.000 148.400 200.000 ;
+    END
+  END proj_in[128]
+  PIN proj_in[129]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 144.480 196.000 145.040 200.000 ;
+    END
+  END proj_in[129]
+  PIN proj_in[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 53.760 200.000 54.320 ;
+    END
+  END proj_in[12]
+  PIN proj_in[130]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 178.080 200.000 178.640 ;
+    END
+  END proj_in[130]
+  PIN proj_in[131]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 147.840 200.000 148.400 ;
+    END
+  END proj_in[131]
+  PIN proj_in[132]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 124.320 200.000 124.880 ;
+    END
+  END proj_in[132]
+  PIN proj_in[133]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 104.160 200.000 104.720 ;
+    END
+  END proj_in[133]
+  PIN proj_in[134]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 94.080 200.000 94.640 ;
+    END
+  END proj_in[134]
+  PIN proj_in[135]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 33.600 200.000 34.160 ;
+    END
+  END proj_in[135]
+  PIN proj_in[136]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
@@ -296,14 +637,95 @@ MACRO input_mux
       LAYER Metal3 ;
         RECT 196.000 43.680 200.000 44.240 ;
     END
-  END proj_in[14]
-  PIN proj_in[15]
+  END proj_in[136]
+  PIN proj_in[137]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 80.640 200.000 81.200 ;
+    END
+  END proj_in[137]
+  PIN proj_in[138]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
         RECT 196.000 70.560 200.000 71.120 ;
+    END
+  END proj_in[138]
+  PIN proj_in[139]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 151.200 0.000 151.760 4.000 ;
+    END
+  END proj_in[139]
+  PIN proj_in[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 60.480 200.000 61.040 ;
+    END
+  END proj_in[13]
+  PIN proj_in[140]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 157.920 0.000 158.480 4.000 ;
+    END
+  END proj_in[140]
+  PIN proj_in[141]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 134.400 0.000 134.960 4.000 ;
+    END
+  END proj_in[141]
+  PIN proj_in[142]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 174.720 200.000 175.280 ;
+    END
+  END proj_in[142]
+  PIN proj_in[143]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 157.920 200.000 158.480 ;
+    END
+  END proj_in[143]
+  PIN proj_in[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 141.120 0.000 141.680 4.000 ;
+    END
+  END proj_in[14]
+  PIN proj_in[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 137.760 0.000 138.320 4.000 ;
     END
   END proj_in[15]
   PIN proj_in[16]
@@ -312,7 +734,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 0.000 100.800 4.000 101.360 ;
+        RECT 196.000 161.280 200.000 161.840 ;
     END
   END proj_in[16]
   PIN proj_in[17]
@@ -321,7 +743,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 0.000 117.600 4.000 118.160 ;
+        RECT 196.000 131.040 200.000 131.600 ;
     END
   END proj_in[17]
   PIN proj_in[18]
@@ -329,8 +751,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 104.160 4.000 104.720 ;
+      LAYER Metal2 ;
+        RECT 36.960 196.000 37.520 200.000 ;
     END
   END proj_in[18]
   PIN proj_in[19]
@@ -339,7 +761,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 114.240 196.000 114.800 200.000 ;
+        RECT 16.800 196.000 17.360 200.000 ;
     END
   END proj_in[19]
   PIN proj_in[1]
@@ -348,7 +770,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 77.280 196.000 77.840 200.000 ;
+        RECT 110.880 196.000 111.440 200.000 ;
     END
   END proj_in[1]
   PIN proj_in[20]
@@ -357,7 +779,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 120.960 196.000 121.520 200.000 ;
+        RECT 53.760 196.000 54.320 200.000 ;
     END
   END proj_in[20]
   PIN proj_in[21]
@@ -366,7 +788,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 110.880 196.000 111.440 200.000 ;
+        RECT 60.480 196.000 61.040 200.000 ;
     END
   END proj_in[21]
   PIN proj_in[22]
@@ -374,8 +796,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal2 ;
-        RECT 117.600 196.000 118.160 200.000 ;
+      LAYER Metal3 ;
+        RECT 0.000 154.560 4.000 155.120 ;
     END
   END proj_in[22]
   PIN proj_in[23]
@@ -384,7 +806,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 110.880 200.000 111.440 ;
+        RECT 0.000 114.240 4.000 114.800 ;
     END
   END proj_in[23]
   PIN proj_in[24]
@@ -393,7 +815,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 131.040 200.000 131.600 ;
+        RECT 0.000 147.840 4.000 148.400 ;
     END
   END proj_in[24]
   PIN proj_in[25]
@@ -402,7 +824,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 181.440 200.000 182.000 ;
+        RECT 0.000 161.280 4.000 161.840 ;
     END
   END proj_in[25]
   PIN proj_in[26]
@@ -411,7 +833,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 144.480 200.000 145.040 ;
+        RECT 0.000 90.720 4.000 91.280 ;
     END
   END proj_in[26]
   PIN proj_in[27]
@@ -420,7 +842,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 94.080 200.000 94.640 ;
+        RECT 0.000 36.960 4.000 37.520 ;
     END
   END proj_in[27]
   PIN proj_in[28]
@@ -429,7 +851,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 87.360 200.000 87.920 ;
+        RECT 0.000 40.320 4.000 40.880 ;
     END
   END proj_in[28]
   PIN proj_in[29]
@@ -437,8 +859,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal2 ;
-        RECT 100.800 0.000 101.360 4.000 ;
+      LAYER Metal3 ;
+        RECT 0.000 53.760 4.000 54.320 ;
     END
   END proj_in[29]
   PIN proj_in[2]
@@ -447,7 +869,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 94.080 196.000 94.640 200.000 ;
+        RECT 120.960 196.000 121.520 200.000 ;
     END
   END proj_in[2]
   PIN proj_in[30]
@@ -455,8 +877,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal2 ;
-        RECT 114.240 0.000 114.800 4.000 ;
+      LAYER Metal3 ;
+        RECT 0.000 70.560 4.000 71.120 ;
     END
   END proj_in[30]
   PIN proj_in[31]
@@ -464,8 +886,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 97.440 200.000 98.000 ;
+      LAYER Metal2 ;
+        RECT 57.120 0.000 57.680 4.000 ;
     END
   END proj_in[31]
   PIN proj_in[32]
@@ -473,8 +895,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 100.800 200.000 101.360 ;
+      LAYER Metal2 ;
+        RECT 63.840 0.000 64.400 4.000 ;
     END
   END proj_in[32]
   PIN proj_in[33]
@@ -482,8 +904,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 30.240 200.000 30.800 ;
+      LAYER Metal2 ;
+        RECT 60.480 0.000 61.040 4.000 ;
     END
   END proj_in[33]
   PIN proj_in[34]
@@ -492,7 +914,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 33.600 200.000 34.160 ;
+        RECT 0.000 134.400 4.000 134.960 ;
     END
   END proj_in[34]
   PIN proj_in[35]
@@ -510,7 +932,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 0.000 114.240 4.000 114.800 ;
+        RECT 0.000 131.040 4.000 131.600 ;
     END
   END proj_in[36]
   PIN proj_in[37]
@@ -519,7 +941,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 0.000 110.880 4.000 111.440 ;
+        RECT 0.000 141.120 4.000 141.680 ;
     END
   END proj_in[37]
   PIN proj_in[38]
@@ -527,8 +949,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 107.520 200.000 108.080 ;
+      LAYER Metal2 ;
+        RECT 57.120 196.000 57.680 200.000 ;
     END
   END proj_in[38]
   PIN proj_in[39]
@@ -537,7 +959,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 117.600 200.000 118.160 ;
+        RECT 0.000 137.760 4.000 138.320 ;
     END
   END proj_in[39]
   PIN proj_in[3]
@@ -546,7 +968,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 87.360 196.000 87.920 200.000 ;
+        RECT 168.000 196.000 168.560 200.000 ;
     END
   END proj_in[3]
   PIN proj_in[40]
@@ -555,7 +977,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 141.120 200.000 141.680 ;
+        RECT 0.000 120.960 4.000 121.520 ;
     END
   END proj_in[40]
   PIN proj_in[41]
@@ -564,7 +986,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 147.840 200.000 148.400 ;
+        RECT 0.000 117.600 4.000 118.160 ;
     END
   END proj_in[41]
   PIN proj_in[42]
@@ -573,7 +995,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 104.160 200.000 104.720 ;
+        RECT 0.000 110.880 4.000 111.440 ;
     END
   END proj_in[42]
   PIN proj_in[43]
@@ -582,7 +1004,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 124.320 200.000 124.880 ;
+        RECT 0.000 151.200 4.000 151.760 ;
     END
   END proj_in[43]
   PIN proj_in[44]
@@ -591,7 +1013,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 114.240 200.000 114.800 ;
+        RECT 0.000 57.120 4.000 57.680 ;
     END
   END proj_in[44]
   PIN proj_in[45]
@@ -600,7 +1022,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 134.400 200.000 134.960 ;
+        RECT 0.000 77.280 4.000 77.840 ;
     END
   END proj_in[45]
   PIN proj_in[46]
@@ -609,7 +1031,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 20.160 200.000 20.720 ;
+        RECT 0.000 87.360 4.000 87.920 ;
     END
   END proj_in[46]
   PIN proj_in[47]
@@ -618,7 +1040,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 90.720 200.000 91.280 ;
+        RECT 0.000 47.040 4.000 47.600 ;
     END
   END proj_in[47]
   PIN proj_in[48]
@@ -627,7 +1049,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 36.960 200.000 37.520 ;
+        RECT 0.000 63.840 4.000 64.400 ;
     END
   END proj_in[48]
   PIN proj_in[49]
@@ -636,7 +1058,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 84.000 200.000 84.560 ;
+        RECT 0.000 43.680 4.000 44.240 ;
     END
   END proj_in[49]
   PIN proj_in[4]
@@ -645,7 +1067,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 164.640 200.000 165.200 ;
+        RECT 196.000 120.960 200.000 121.520 ;
     END
   END proj_in[4]
   PIN proj_in[50]
@@ -654,7 +1076,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 16.800 200.000 17.360 ;
+        RECT 0.000 50.400 4.000 50.960 ;
     END
   END proj_in[50]
   PIN proj_in[51]
@@ -663,7 +1085,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 120.960 200.000 121.520 ;
+        RECT 0.000 67.200 4.000 67.760 ;
     END
   END proj_in[51]
   PIN proj_in[52]
@@ -671,8 +1093,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 23.520 200.000 24.080 ;
+      LAYER Metal2 ;
+        RECT 178.080 196.000 178.640 200.000 ;
     END
   END proj_in[52]
   PIN proj_in[53]
@@ -680,8 +1102,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 26.880 200.000 27.440 ;
+      LAYER Metal2 ;
+        RECT 97.440 196.000 98.000 200.000 ;
     END
   END proj_in[53]
   PIN proj_in[54]
@@ -689,8 +1111,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 80.640 4.000 81.200 ;
+      LAYER Metal2 ;
+        RECT 23.520 196.000 24.080 200.000 ;
     END
   END proj_in[54]
   PIN proj_in[55]
@@ -698,8 +1120,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 97.440 4.000 98.000 ;
+      LAYER Metal2 ;
+        RECT 43.680 196.000 44.240 200.000 ;
     END
   END proj_in[55]
   PIN proj_in[56]
@@ -707,8 +1129,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 90.720 4.000 91.280 ;
+      LAYER Metal2 ;
+        RECT 70.560 196.000 71.120 200.000 ;
     END
   END proj_in[56]
   PIN proj_in[57]
@@ -717,7 +1139,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 104.160 196.000 104.720 200.000 ;
+        RECT 40.320 196.000 40.880 200.000 ;
     END
   END proj_in[57]
   PIN proj_in[58]
@@ -725,8 +1147,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal2 ;
-        RECT 84.000 196.000 84.560 200.000 ;
+      LAYER Metal3 ;
+        RECT 0.000 107.520 4.000 108.080 ;
     END
   END proj_in[58]
   PIN proj_in[59]
@@ -734,8 +1156,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal2 ;
-        RECT 97.440 196.000 98.000 200.000 ;
+      LAYER Metal3 ;
+        RECT 0.000 157.920 4.000 158.480 ;
     END
   END proj_in[59]
   PIN proj_in[5]
@@ -744,7 +1166,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 168.000 200.000 168.560 ;
+        RECT 196.000 154.560 200.000 155.120 ;
     END
   END proj_in[5]
   PIN proj_in[60]
@@ -752,8 +1174,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal2 ;
-        RECT 90.720 196.000 91.280 200.000 ;
+      LAYER Metal3 ;
+        RECT 0.000 104.160 4.000 104.720 ;
     END
   END proj_in[60]
   PIN proj_in[61]
@@ -762,7 +1184,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 174.720 200.000 175.280 ;
+        RECT 0.000 100.800 4.000 101.360 ;
     END
   END proj_in[61]
   PIN proj_in[62]
@@ -771,7 +1193,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 157.920 200.000 158.480 ;
+        RECT 0.000 80.640 4.000 81.200 ;
     END
   END proj_in[62]
   PIN proj_in[63]
@@ -780,7 +1202,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 154.560 200.000 155.120 ;
+        RECT 0.000 84.000 4.000 84.560 ;
     END
   END proj_in[63]
   PIN proj_in[64]
@@ -789,7 +1211,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 151.200 200.000 151.760 ;
+        RECT 0.000 73.920 4.000 74.480 ;
     END
   END proj_in[64]
   PIN proj_in[65]
@@ -797,8 +1219,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal2 ;
-        RECT 107.520 0.000 108.080 4.000 ;
+      LAYER Metal3 ;
+        RECT 0.000 60.480 4.000 61.040 ;
     END
   END proj_in[65]
   PIN proj_in[66]
@@ -807,7 +1229,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 104.160 0.000 104.720 4.000 ;
+        RECT 73.920 0.000 74.480 4.000 ;
     END
   END proj_in[66]
   PIN proj_in[67]
@@ -816,7 +1238,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 90.720 0.000 91.280 4.000 ;
+        RECT 67.200 0.000 67.760 4.000 ;
     END
   END proj_in[67]
   PIN proj_in[68]
@@ -825,7 +1247,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 110.880 0.000 111.440 4.000 ;
+        RECT 53.760 0.000 54.320 4.000 ;
     END
   END proj_in[68]
   PIN proj_in[69]
@@ -833,8 +1255,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 50.400 200.000 50.960 ;
+      LAYER Metal2 ;
+        RECT 70.560 0.000 71.120 4.000 ;
     END
   END proj_in[69]
   PIN proj_in[6]
@@ -843,7 +1265,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 171.360 200.000 171.920 ;
+        RECT 196.000 168.000 200.000 168.560 ;
     END
   END proj_in[6]
   PIN proj_in[70]
@@ -852,7 +1274,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 67.200 200.000 67.760 ;
+        RECT 0.000 144.480 4.000 145.040 ;
     END
   END proj_in[70]
   PIN proj_in[71]
@@ -861,7 +1283,7 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal3 ;
-        RECT 196.000 80.640 200.000 81.200 ;
+        RECT 0.000 124.320 4.000 124.880 ;
     END
   END proj_in[71]
   PIN proj_in[72]
@@ -869,8 +1291,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 196.000 73.920 200.000 74.480 ;
+      LAYER Metal2 ;
+        RECT 131.040 196.000 131.600 200.000 ;
     END
   END proj_in[72]
   PIN proj_in[73]
@@ -878,8 +1300,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 73.920 4.000 74.480 ;
+      LAYER Metal2 ;
+        RECT 127.680 196.000 128.240 200.000 ;
     END
   END proj_in[73]
   PIN proj_in[74]
@@ -887,8 +1309,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 77.280 4.000 77.840 ;
+      LAYER Metal2 ;
+        RECT 137.760 196.000 138.320 200.000 ;
     END
   END proj_in[74]
   PIN proj_in[75]
@@ -896,11 +1318,191 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 84.000 4.000 84.560 ;
+      LAYER Metal2 ;
+        RECT 141.120 196.000 141.680 200.000 ;
     END
   END proj_in[75]
+  PIN proj_in[76]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 134.400 200.000 134.960 ;
+    END
+  END proj_in[76]
+  PIN proj_in[77]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 114.240 200.000 114.800 ;
+    END
+  END proj_in[77]
+  PIN proj_in[78]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 110.880 200.000 111.440 ;
+    END
+  END proj_in[78]
+  PIN proj_in[79]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 100.800 200.000 101.360 ;
+    END
+  END proj_in[79]
   PIN proj_in[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 107.520 200.000 108.080 ;
+    END
+  END proj_in[7]
+  PIN proj_in[80]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 20.160 200.000 20.720 ;
+    END
+  END proj_in[80]
+  PIN proj_in[81]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 30.240 200.000 30.800 ;
+    END
+  END proj_in[81]
+  PIN proj_in[82]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 84.000 200.000 84.560 ;
+    END
+  END proj_in[82]
+  PIN proj_in[83]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 50.400 200.000 50.960 ;
+    END
+  END proj_in[83]
+  PIN proj_in[84]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 73.920 200.000 74.480 ;
+    END
+  END proj_in[84]
+  PIN proj_in[85]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 63.840 200.000 64.400 ;
+    END
+  END proj_in[85]
+  PIN proj_in[86]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 67.200 200.000 67.760 ;
+    END
+  END proj_in[86]
+  PIN proj_in[87]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 57.120 200.000 57.680 ;
+    END
+  END proj_in[87]
+  PIN proj_in[88]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 144.480 200.000 145.040 ;
+    END
+  END proj_in[88]
+  PIN proj_in[89]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 127.680 200.000 128.240 ;
+    END
+  END proj_in[89]
+  PIN proj_in[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 23.520 200.000 24.080 ;
+    END
+  END proj_in[8]
+  PIN proj_in[90]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 117.600 196.000 118.160 200.000 ;
+    END
+  END proj_in[90]
+  PIN proj_in[91]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 161.280 196.000 161.840 200.000 ;
+    END
+  END proj_in[91]
+  PIN proj_in[92]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 164.640 196.000 165.200 200.000 ;
+    END
+  END proj_in[92]
+  PIN proj_in[93]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 124.320 196.000 124.880 200.000 ;
+    END
+  END proj_in[93]
+  PIN proj_in[94]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
@@ -908,23 +1510,59 @@ MACRO input_mux
       LAYER Metal3 ;
         RECT 196.000 137.760 200.000 138.320 ;
     END
-  END proj_in[7]
-  PIN proj_in[8]
+  END proj_in[94]
+  PIN proj_in[95]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal2 ;
-        RECT 131.040 0.000 131.600 4.000 ;
+      LAYER Metal3 ;
+        RECT 196.000 117.600 200.000 118.160 ;
     END
-  END proj_in[8]
+  END proj_in[95]
+  PIN proj_in[96]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 164.640 200.000 165.200 ;
+    END
+  END proj_in[96]
+  PIN proj_in[97]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 171.360 200.000 171.920 ;
+    END
+  END proj_in[97]
+  PIN proj_in[98]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 97.440 200.000 98.000 ;
+    END
+  END proj_in[98]
+  PIN proj_in[99]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 87.360 200.000 87.920 ;
+    END
+  END proj_in[99]
   PIN proj_in[9]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal2 ;
-        RECT 120.960 0.000 121.520 4.000 ;
+      LAYER Metal3 ;
+        RECT 196.000 90.720 200.000 91.280 ;
     END
   END proj_in[9]
   PIN proj_rst_n[0]
@@ -932,8 +1570,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 120.960 4.000 121.520 ;
+      LAYER Metal2 ;
+        RECT 151.200 196.000 151.760 200.000 ;
     END
   END proj_rst_n[0]
   PIN proj_rst_n[1]
@@ -941,8 +1579,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 107.520 4.000 108.080 ;
+      LAYER Metal2 ;
+        RECT 63.840 196.000 64.400 200.000 ;
     END
   END proj_rst_n[1]
   PIN proj_rst_n[2]
@@ -950,8 +1588,8 @@ MACRO input_mux
     USE SIGNAL ;
     ANTENNADIFFAREA 0.754600 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 94.080 4.000 94.640 ;
+      LAYER Metal2 ;
+        RECT 157.920 196.000 158.480 200.000 ;
     END
   END proj_rst_n[2]
   PIN proj_rst_n[3]
@@ -960,17 +1598,53 @@ MACRO input_mux
     ANTENNADIFFAREA 0.754600 ;
     PORT
       LAYER Metal2 ;
-        RECT 87.360 0.000 87.920 4.000 ;
+        RECT 67.200 196.000 67.760 200.000 ;
     END
   END proj_rst_n[3]
+  PIN proj_rst_n[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 141.120 200.000 141.680 ;
+    END
+  END proj_rst_n[4]
+  PIN proj_rst_n[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 107.520 196.000 108.080 200.000 ;
+    END
+  END proj_rst_n[5]
+  PIN proj_rst_n[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 50.400 196.000 50.960 200.000 ;
+    END
+  END proj_rst_n[6]
+  PIN proj_rst_n[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.754600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 196.000 151.200 200.000 151.760 ;
+    END
+  END proj_rst_n[7]
   PIN rst_n
     DIRECTION INPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.741000 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 87.360 4.000 87.920 ;
+      LAYER Metal2 ;
+        RECT 77.280 196.000 77.840 200.000 ;
     END
   END rst_n
   PIN sel[0]
@@ -979,8 +1653,8 @@ MACRO input_mux
     ANTENNAGATEAREA 0.741000 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 67.200 4.000 67.760 ;
+      LAYER Metal2 ;
+        RECT 107.520 0.000 108.080 4.000 ;
     END
   END sel[0]
   PIN sel[1]
@@ -989,10 +1663,20 @@ MACRO input_mux
     ANTENNAGATEAREA 0.741000 ;
     ANTENNADIFFAREA 0.410400 ;
     PORT
-      LAYER Metal3 ;
-        RECT 0.000 70.560 4.000 71.120 ;
+      LAYER Metal2 ;
+        RECT 110.880 0.000 111.440 4.000 ;
     END
   END sel[1]
+  PIN sel[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    ANTENNADIFFAREA 0.410400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 100.800 0.000 101.360 4.000 ;
+    END
+  END sel[2]
   PIN vdd
     DIRECTION INOUT ;
     USE POWER ;
@@ -1035,9 +1719,27 @@ MACRO input_mux
   END vss
   OBS
       LAYER Metal1 ;
-        RECT 6.720 12.470 194.000 184.540 ;
+        RECT 6.720 4.630 194.000 189.130 ;
       LAYER Metal2 ;
-        RECT 8.540 195.700 73.620 196.000 ;
+        RECT 8.540 195.700 13.140 196.000 ;
+        RECT 14.300 195.700 16.500 196.000 ;
+        RECT 17.660 195.700 19.860 196.000 ;
+        RECT 21.020 195.700 23.220 196.000 ;
+        RECT 24.380 195.700 26.580 196.000 ;
+        RECT 27.740 195.700 29.940 196.000 ;
+        RECT 31.100 195.700 33.300 196.000 ;
+        RECT 34.460 195.700 36.660 196.000 ;
+        RECT 37.820 195.700 40.020 196.000 ;
+        RECT 41.180 195.700 43.380 196.000 ;
+        RECT 44.540 195.700 46.740 196.000 ;
+        RECT 47.900 195.700 50.100 196.000 ;
+        RECT 51.260 195.700 53.460 196.000 ;
+        RECT 54.620 195.700 56.820 196.000 ;
+        RECT 57.980 195.700 60.180 196.000 ;
+        RECT 61.340 195.700 63.540 196.000 ;
+        RECT 64.700 195.700 66.900 196.000 ;
+        RECT 68.060 195.700 70.260 196.000 ;
+        RECT 71.420 195.700 73.620 196.000 ;
         RECT 74.780 195.700 76.980 196.000 ;
         RECT 78.140 195.700 80.340 196.000 ;
         RECT 81.500 195.700 83.700 196.000 ;
@@ -1053,9 +1755,40 @@ MACRO input_mux
         RECT 115.100 195.700 117.300 196.000 ;
         RECT 118.460 195.700 120.660 196.000 ;
         RECT 121.820 195.700 124.020 196.000 ;
-        RECT 125.180 195.700 196.420 196.000 ;
-        RECT 8.540 4.300 196.420 195.700 ;
-        RECT 8.540 4.000 73.620 4.300 ;
+        RECT 125.180 195.700 127.380 196.000 ;
+        RECT 128.540 195.700 130.740 196.000 ;
+        RECT 131.900 195.700 134.100 196.000 ;
+        RECT 135.260 195.700 137.460 196.000 ;
+        RECT 138.620 195.700 140.820 196.000 ;
+        RECT 141.980 195.700 144.180 196.000 ;
+        RECT 145.340 195.700 147.540 196.000 ;
+        RECT 148.700 195.700 150.900 196.000 ;
+        RECT 152.060 195.700 154.260 196.000 ;
+        RECT 155.420 195.700 157.620 196.000 ;
+        RECT 158.780 195.700 160.980 196.000 ;
+        RECT 162.140 195.700 164.340 196.000 ;
+        RECT 165.500 195.700 167.700 196.000 ;
+        RECT 168.860 195.700 171.060 196.000 ;
+        RECT 172.220 195.700 174.420 196.000 ;
+        RECT 175.580 195.700 177.780 196.000 ;
+        RECT 178.940 195.700 181.140 196.000 ;
+        RECT 182.300 195.700 193.860 196.000 ;
+        RECT 8.540 4.300 193.860 195.700 ;
+        RECT 8.540 4.000 26.580 4.300 ;
+        RECT 27.740 4.000 29.940 4.300 ;
+        RECT 31.100 4.000 33.300 4.300 ;
+        RECT 34.460 4.000 36.660 4.300 ;
+        RECT 37.820 4.000 40.020 4.300 ;
+        RECT 41.180 4.000 43.380 4.300 ;
+        RECT 44.540 4.000 46.740 4.300 ;
+        RECT 47.900 4.000 50.100 4.300 ;
+        RECT 51.260 4.000 53.460 4.300 ;
+        RECT 54.620 4.000 56.820 4.300 ;
+        RECT 57.980 4.000 60.180 4.300 ;
+        RECT 61.340 4.000 63.540 4.300 ;
+        RECT 64.700 4.000 66.900 4.300 ;
+        RECT 68.060 4.000 70.260 4.300 ;
+        RECT 71.420 4.000 73.620 4.300 ;
         RECT 74.780 4.000 76.980 4.300 ;
         RECT 78.140 4.000 80.340 4.300 ;
         RECT 81.500 4.000 83.700 4.300 ;
@@ -1073,12 +1806,21 @@ MACRO input_mux
         RECT 121.820 4.000 124.020 4.300 ;
         RECT 125.180 4.000 127.380 4.300 ;
         RECT 128.540 4.000 130.740 4.300 ;
-        RECT 131.900 4.000 196.420 4.300 ;
+        RECT 131.900 4.000 134.100 4.300 ;
+        RECT 135.260 4.000 137.460 4.300 ;
+        RECT 138.620 4.000 140.820 4.300 ;
+        RECT 141.980 4.000 144.180 4.300 ;
+        RECT 145.340 4.000 147.540 4.300 ;
+        RECT 148.700 4.000 150.900 4.300 ;
+        RECT 152.060 4.000 154.260 4.300 ;
+        RECT 155.420 4.000 157.620 4.300 ;
+        RECT 158.780 4.000 160.980 4.300 ;
+        RECT 162.140 4.000 164.340 4.300 ;
+        RECT 165.500 4.000 167.700 4.300 ;
+        RECT 168.860 4.000 171.060 4.300 ;
+        RECT 172.220 4.000 193.860 4.300 ;
       LAYER Metal3 ;
-        RECT 4.000 184.500 195.700 185.220 ;
-        RECT 4.000 182.300 196.000 184.500 ;
-        RECT 4.000 181.140 195.700 182.300 ;
-        RECT 4.000 178.940 196.000 181.140 ;
+        RECT 4.000 178.940 196.000 184.660 ;
         RECT 4.000 177.780 195.700 178.940 ;
         RECT 4.000 175.580 196.000 177.780 ;
         RECT 4.000 174.420 195.700 175.580 ;
@@ -1087,25 +1829,25 @@ MACRO input_mux
         RECT 4.000 168.860 196.000 171.060 ;
         RECT 4.000 167.700 195.700 168.860 ;
         RECT 4.000 165.500 196.000 167.700 ;
-        RECT 4.000 164.340 195.700 165.500 ;
+        RECT 4.300 164.340 195.700 165.500 ;
         RECT 4.000 162.140 196.000 164.340 ;
-        RECT 4.000 160.980 195.700 162.140 ;
+        RECT 4.300 160.980 195.700 162.140 ;
         RECT 4.000 158.780 196.000 160.980 ;
-        RECT 4.000 157.620 195.700 158.780 ;
+        RECT 4.300 157.620 195.700 158.780 ;
         RECT 4.000 155.420 196.000 157.620 ;
-        RECT 4.000 154.260 195.700 155.420 ;
+        RECT 4.300 154.260 195.700 155.420 ;
         RECT 4.000 152.060 196.000 154.260 ;
-        RECT 4.000 150.900 195.700 152.060 ;
+        RECT 4.300 150.900 195.700 152.060 ;
         RECT 4.000 148.700 196.000 150.900 ;
-        RECT 4.000 147.540 195.700 148.700 ;
+        RECT 4.300 147.540 195.700 148.700 ;
         RECT 4.000 145.340 196.000 147.540 ;
-        RECT 4.000 144.180 195.700 145.340 ;
+        RECT 4.300 144.180 195.700 145.340 ;
         RECT 4.000 141.980 196.000 144.180 ;
-        RECT 4.000 140.820 195.700 141.980 ;
+        RECT 4.300 140.820 195.700 141.980 ;
         RECT 4.000 138.620 196.000 140.820 ;
-        RECT 4.000 137.460 195.700 138.620 ;
+        RECT 4.300 137.460 195.700 138.620 ;
         RECT 4.000 135.260 196.000 137.460 ;
-        RECT 4.000 134.100 195.700 135.260 ;
+        RECT 4.300 134.100 195.700 135.260 ;
         RECT 4.000 131.900 196.000 134.100 ;
         RECT 4.300 130.740 195.700 131.900 ;
         RECT 4.000 128.540 196.000 130.740 ;
@@ -1149,21 +1891,21 @@ MACRO input_mux
         RECT 4.000 64.700 196.000 66.900 ;
         RECT 4.300 63.540 195.700 64.700 ;
         RECT 4.000 61.340 196.000 63.540 ;
-        RECT 4.000 60.180 195.700 61.340 ;
+        RECT 4.300 60.180 195.700 61.340 ;
         RECT 4.000 57.980 196.000 60.180 ;
-        RECT 4.000 56.820 195.700 57.980 ;
+        RECT 4.300 56.820 195.700 57.980 ;
         RECT 4.000 54.620 196.000 56.820 ;
-        RECT 4.000 53.460 195.700 54.620 ;
+        RECT 4.300 53.460 195.700 54.620 ;
         RECT 4.000 51.260 196.000 53.460 ;
-        RECT 4.000 50.100 195.700 51.260 ;
+        RECT 4.300 50.100 195.700 51.260 ;
         RECT 4.000 47.900 196.000 50.100 ;
-        RECT 4.000 46.740 195.700 47.900 ;
+        RECT 4.300 46.740 195.700 47.900 ;
         RECT 4.000 44.540 196.000 46.740 ;
-        RECT 4.000 43.380 195.700 44.540 ;
+        RECT 4.300 43.380 195.700 44.540 ;
         RECT 4.000 41.180 196.000 43.380 ;
-        RECT 4.000 40.020 195.700 41.180 ;
+        RECT 4.300 40.020 195.700 41.180 ;
         RECT 4.000 37.820 196.000 40.020 ;
-        RECT 4.000 36.660 195.700 37.820 ;
+        RECT 4.300 36.660 195.700 37.820 ;
         RECT 4.000 34.460 196.000 36.660 ;
         RECT 4.000 33.300 195.700 34.460 ;
         RECT 4.000 31.100 196.000 33.300 ;
@@ -1176,8 +1918,13 @@ MACRO input_mux
         RECT 4.000 19.860 195.700 21.020 ;
         RECT 4.000 17.660 196.000 19.860 ;
         RECT 4.000 16.500 195.700 17.660 ;
-        RECT 4.000 14.300 196.000 16.500 ;
-        RECT 4.000 13.580 195.700 14.300 ;
+        RECT 4.000 4.620 196.000 16.500 ;
+      LAYER Metal4 ;
+        RECT 50.540 22.490 52.240 147.190 ;
+        RECT 54.440 22.490 75.550 147.190 ;
+        RECT 77.750 22.490 98.860 147.190 ;
+        RECT 101.060 22.490 122.170 147.190 ;
+        RECT 124.370 22.490 124.740 147.190 ;
   END
 END input_mux
 END LIBRARY

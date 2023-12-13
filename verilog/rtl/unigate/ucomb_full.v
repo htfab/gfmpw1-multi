@@ -5,7 +5,7 @@
 
 module ucomb_full (
     input clk,
-    input [18:0] in,
+    input [17:0] in,
     output [11:0] out
 );
 
@@ -14,7 +14,7 @@ ucomb ucomb_inst (
     .u31_in(in[11:6]),
     .u41_in(in[11:2]),
     .u22_in(in[17:12]),
-    .u22_sel(in[18]),
+    .u22_sel(in[2]),
     .u21_out(out[0]),
     .u31_out(out[1]),
     .u41_out(out[2]),

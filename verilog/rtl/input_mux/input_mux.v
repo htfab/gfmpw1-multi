@@ -9,30 +9,23 @@ module input_mux (
     input clk,
     input rst_n,
     input [`INPUT_BITS-1:0] in,
-    output [3:0] proj_clk,
-    output [3:0] proj_rst_n,
-    output [4*`INPUT_BITS-1:0] proj_in
+    output [`NUM_DESIGNS-1:0] proj_clk,
+    output [`NUM_DESIGNS-1:0] proj_rst_n,
+    output [`NUM_DESIGNS*`INPUT_BITS-1:0] proj_in
 );
 
-reg[`SEL_BITS-1:0] sel_latched;
+reg[`SEL_BITS-1:0] sel_reg;
 always @(posedge clk) begin
-    sel_latched <= sel;
+    sel_reg <= sel;
 end
 
-assign proj_clk[0] = clk | (sel_latched != 0);
-assign proj_clk[1] = clk | (sel_latched != 1);
-assign proj_clk[2] = clk | (sel_latched != 2);
-assign proj_clk[3] = clk | (sel_latched != 3);
-
-assign proj_rst_n[0] = (sel == 0) ? rst_n : 1'b0;
-assign proj_rst_n[1] = (sel == 1) ? rst_n : 1'b0;
-assign proj_rst_n[2] = (sel == 2) ? rst_n : 1'b0;
-assign proj_rst_n[3] = (sel == 3) ? rst_n : 1'b0;
-
-assign proj_in[  `INPUT_BITS-1:            0] = (sel == 0) ? in : {`INPUT_BITS{1'b0}};
-assign proj_in[2*`INPUT_BITS-1:  `INPUT_BITS] = (sel == 1) ? in : {`INPUT_BITS{1'b0}};
-assign proj_in[3*`INPUT_BITS-1:2*`INPUT_BITS] = (sel == 2) ? in : {`INPUT_BITS{1'b0}};
-assign proj_in[4*`INPUT_BITS-1:3*`INPUT_BITS] = (sel == 3) ? in : {`INPUT_BITS{1'b0}};
+generate genvar i;
+for (i=0; i<`NUM_DESIGNS; i=i+1) begin
+    assign proj_clk[i] = clk | (sel_reg != i);
+    assign proj_rst_n[i] = (sel == i) ? rst_n : 1'b0;
+    assign proj_in[i*`INPUT_BITS+:`INPUT_BITS] = (sel == i) ? in : {`INPUT_BITS{1'b0}};
+end
+endgenerate
 
 endmodule
 `default_nettype wire

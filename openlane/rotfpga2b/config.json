@@ -1,33 +1,33 @@
 {
-	"PDK": "gf180mcuD",
-	"STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
-	"DESIGN_NAME": "rotfpga2b",
-	"VERILOG_FILES": [
-		"dir::../../verilog/rtl/params.v",
-		"dir::../../verilog/rtl/rotfpga2b/tile.v",
-		"dir::../../verilog/rtl/rotfpga2b/grid.v",
-		"dir::../../verilog/rtl/rotfpga2b/rotfpga2b.v"
-	],
+    "PDK": "gf180mcuD",
+    "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
+    "DESIGN_NAME": "rotfpga2b",
+    "VERILOG_FILES": [
+        "dir::../../verilog/rtl/params.v",
+        "dir::../../verilog/rtl/rotfpga2b/tile.v",
+        "dir::../../verilog/rtl/rotfpga2b/grid.v",
+        "dir::../../verilog/rtl/rotfpga2b/rotfpga2b.v"
+    ],
     "SYNTH_EXTRA_MAPPING_FILE": "dir::latch_map.v",
-	"DESIGN_IS_CORE": 0,
-	"CLOCK_PORT": "clk",
-	"CLOCK_NET": "clk",
-	"CLOCK_PERIOD": "24.0",
-	"FP_SIZING": "absolute",
-	"DIE_AREA": "0 0 1280 1280",
-	"PL_BASIC_PLACEMENT": 0,
-	"PL_TARGET_DENSITY": 0.7,
-	"FP_CORE_UTIL": 40,
-	"MAX_FANOUT_CONSTRAINT": 4,
-	"RT_MAX_LAYER": "Metal4",
-	"VDD_NETS": [
-		"vdd"
-	],
-	"GND_NETS": [
-		"vss"
-	],
+    "DESIGN_IS_CORE": 0,
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "clk",
+    "CLOCK_PERIOD": "24.0",
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 1280 1280",
+    "PL_BASIC_PLACEMENT": 0,
+    "PL_TARGET_DENSITY": 0.7,
+    "FP_CORE_UTIL": 40,
+    "MAX_FANOUT_CONSTRAINT": 4,
+    "RT_MAX_LAYER": "Metal4",
+    "VDD_NETS": [
+        "vdd"
+    ],
+    "GND_NETS": [
+        "vss"
+    ],
     "BASE_SDC_FILE": "dir::base_rotfpga2b.sdc",
-	"RUN_HEURISTIC_DIODE_INSERTION": 1,
-	"RUN_CVC": 1,
-	"QUIT_ON_LINTER_ERRORS": 0
+    "RUN_HEURISTIC_DIODE_INSERTION": 1,
+    "RUN_CVC": 1,
+    "QUIT_ON_LINTER_ERRORS": 0
 }

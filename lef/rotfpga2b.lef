@@ -103,14 +103,6 @@ MACRO rotfpga2b
         RECT 3.360 0.000 3.920 4.000 ;
     END
   END in[17]
-  PIN in[18]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER Metal2 ;
-        RECT 6.720 0.000 7.280 4.000 ;
-    END
-  END in[18]
   PIN in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -314,7 +306,7 @@ MACRO rotfpga2b
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 10.080 0.000 10.640 4.000 ;
+        RECT 6.720 0.000 7.280 4.000 ;
     END
   END rst_n
   PIN vdd
@@ -406,8 +398,7 @@ MACRO rotfpga2b
         RECT 810.620 1275.700 903.540 1276.000 ;
         RECT 904.700 1275.700 1271.060 1276.000 ;
         RECT 8.540 4.300 1271.060 1275.700 ;
-        RECT 8.540 3.450 9.780 4.300 ;
-        RECT 10.940 3.450 332.340 4.300 ;
+        RECT 8.540 3.450 332.340 4.300 ;
         RECT 333.500 3.450 386.100 4.300 ;
         RECT 387.260 3.450 402.900 4.300 ;
         RECT 404.060 3.450 409.620 4.300 ;

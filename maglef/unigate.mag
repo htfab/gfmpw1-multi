@@ -1,197 +1,187 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1702359423
+timestamp 1702441497
 << obsm1 >>
-rect 672 463 59304 58438
+rect 672 1538 49280 48246
 << metal2 >>
 rect 0 0 56 400
+rect 10752 0 10808 400
+rect 11088 0 11144 400
+rect 11424 0 11480 400
+rect 11760 0 11816 400
+rect 12096 0 12152 400
+rect 12432 0 12488 400
 rect 12768 0 12824 400
 rect 13104 0 13160 400
 rect 13440 0 13496 400
-rect 14112 0 14168 400
-rect 14784 0 14840 400
-rect 15456 0 15512 400
-rect 18144 0 18200 400
-rect 18480 0 18536 400
-rect 20496 0 20552 400
+rect 13776 0 13832 400
+rect 15792 0 15848 400
+rect 17472 0 17528 400
+rect 19824 0 19880 400
+rect 20832 0 20888 400
+rect 24528 0 24584 400
+rect 27888 0 27944 400
+rect 28224 0 28280 400
+rect 28560 0 28616 400
+rect 28896 0 28952 400
+rect 29232 0 29288 400
 rect 29568 0 29624 400
-rect 35952 0 36008 400
-rect 36288 0 36344 400
-rect 36624 0 36680 400
-rect 37296 0 37352 400
-rect 37632 0 37688 400
-rect 37968 0 38024 400
-rect 38304 0 38360 400
-rect 38640 0 38696 400
-rect 38976 0 39032 400
-rect 39312 0 39368 400
+rect 29904 0 29960 400
+rect 30576 0 30632 400
+rect 31248 0 31304 400
 << obsm2 >>
-rect 854 430 59010 58427
-rect 854 400 12738 430
-rect 12854 400 13074 430
-rect 13190 400 13410 430
-rect 13526 400 14082 430
-rect 14198 400 14754 430
-rect 14870 400 15426 430
-rect 15542 400 18114 430
-rect 18230 400 18450 430
-rect 18566 400 20466 430
-rect 20582 400 29538 430
-rect 29654 400 35922 430
-rect 36038 400 36258 430
-rect 36374 400 36594 430
-rect 36710 400 37266 430
-rect 37382 400 37602 430
-rect 37718 400 37938 430
-rect 38054 400 38274 430
-rect 38390 400 38610 430
-rect 38726 400 38946 430
-rect 39062 400 39282 430
-rect 39398 400 59010 430
+rect 854 430 48706 49103
+rect 854 350 10722 430
+rect 10838 350 11058 430
+rect 11174 350 11394 430
+rect 11510 350 11730 430
+rect 11846 350 12066 430
+rect 12182 350 12402 430
+rect 12518 350 12738 430
+rect 12854 350 13074 430
+rect 13190 350 13410 430
+rect 13526 350 13746 430
+rect 13862 350 15762 430
+rect 15878 350 17442 430
+rect 17558 350 19794 430
+rect 19910 350 20802 430
+rect 20918 350 24498 430
+rect 24614 350 27858 430
+rect 27974 350 28194 430
+rect 28310 350 28530 430
+rect 28646 350 28866 430
+rect 28982 350 29202 430
+rect 29318 350 29538 430
+rect 29654 350 29874 430
+rect 29990 350 30546 430
+rect 30662 350 31218 430
+rect 31334 350 48706 430
 << metal3 >>
-rect 59600 21504 60000 21560
-rect 59600 21168 60000 21224
-rect 59600 20832 60000 20888
-rect 59600 20496 60000 20552
-rect 59600 19488 60000 19544
-rect 59600 19152 60000 19208
-rect 0 18480 400 18536
-rect 0 16464 400 16520
-rect 0 16128 400 16184
-rect 0 15792 400 15848
-rect 0 15456 400 15512
-rect 0 14784 400 14840
+rect 49600 12432 50000 12488
+rect 49600 12096 50000 12152
+rect 49600 11760 50000 11816
+rect 49600 11424 50000 11480
+rect 49600 11088 50000 11144
+rect 49600 10752 50000 10808
+rect 0 10416 400 10472
 << obsm3 >>
-rect 400 21590 59600 58422
-rect 400 21474 59570 21590
-rect 400 21254 59600 21474
-rect 400 21138 59570 21254
-rect 400 20918 59600 21138
-rect 400 20802 59570 20918
-rect 400 20582 59600 20802
-rect 400 20466 59570 20582
-rect 400 19574 59600 20466
-rect 400 19458 59570 19574
-rect 400 19238 59600 19458
-rect 400 19122 59570 19238
-rect 400 18566 59600 19122
-rect 430 18450 59600 18566
-rect 400 16550 59600 18450
-rect 430 16434 59600 16550
-rect 400 16214 59600 16434
-rect 430 16098 59600 16214
-rect 400 15878 59600 16098
-rect 430 15762 59600 15878
-rect 400 15542 59600 15762
-rect 430 15426 59600 15542
-rect 400 14870 59600 15426
-rect 430 14754 59600 14870
-rect 400 1554 59600 14754
+rect 400 12518 49600 49098
+rect 400 12402 49570 12518
+rect 400 12182 49600 12402
+rect 400 12066 49570 12182
+rect 400 11846 49600 12066
+rect 400 11730 49570 11846
+rect 400 11510 49600 11730
+rect 400 11394 49570 11510
+rect 400 11174 49600 11394
+rect 400 11058 49570 11174
+rect 400 10838 49600 11058
+rect 400 10722 49570 10838
+rect 400 10502 49600 10722
+rect 430 10386 49600 10502
+rect 400 1246 49600 10386
 << metal4 >>
-rect 2224 1538 2384 58438
-rect 9904 1538 10064 58438
-rect 17584 1538 17744 58438
-rect 25264 1538 25424 58438
-rect 32944 1538 33104 58438
-rect 40624 1538 40784 58438
-rect 48304 1538 48464 58438
-rect 55984 1538 56144 58438
+rect 2224 1538 2384 48246
+rect 9904 1538 10064 48246
+rect 17584 1538 17744 48246
+rect 25264 1538 25424 48246
+rect 32944 1538 33104 48246
+rect 40624 1538 40784 48246
+rect 48304 1538 48464 48246
 << obsm4 >>
-rect 17486 5665 17554 58119
-rect 17774 5665 25234 58119
-rect 25454 5665 32914 58119
-rect 33134 5665 40594 58119
-rect 40814 5665 45962 58119
+rect 11606 48276 42546 49103
+rect 11606 1508 17554 48276
+rect 17774 1508 25234 48276
+rect 25454 1508 32914 48276
+rect 33134 1508 40594 48276
+rect 40814 1508 42546 48276
+rect 11606 1241 42546 1508
 << labels >>
-rlabel metal2 s 29568 0 29624 400 6 clk
+rlabel metal2 s 24528 0 24584 400 6 clk
 port 1 nsew signal input
-rlabel metal3 s 0 18480 400 18536 6 in[0]
+rlabel metal3 s 0 10416 400 10472 6 in[0]
 port 2 nsew signal input
-rlabel metal2 s 13440 0 13496 400 6 in[10]
+rlabel metal2 s 12768 0 12824 400 6 in[10]
 port 3 nsew signal input
-rlabel metal2 s 12768 0 12824 400 6 in[11]
+rlabel metal2 s 13776 0 13832 400 6 in[11]
 port 4 nsew signal input
-rlabel metal2 s 36288 0 36344 400 6 in[12]
+rlabel metal2 s 29232 0 29288 400 6 in[12]
 port 5 nsew signal input
-rlabel metal2 s 36624 0 36680 400 6 in[13]
+rlabel metal2 s 28896 0 28952 400 6 in[13]
 port 6 nsew signal input
-rlabel metal2 s 35952 0 36008 400 6 in[14]
+rlabel metal2 s 29568 0 29624 400 6 in[14]
 port 7 nsew signal input
-rlabel metal2 s 37296 0 37352 400 6 in[15]
+rlabel metal2 s 29904 0 29960 400 6 in[15]
 port 8 nsew signal input
-rlabel metal2 s 39312 0 39368 400 6 in[16]
+rlabel metal2 s 31248 0 31304 400 6 in[16]
 port 9 nsew signal input
-rlabel metal2 s 38976 0 39032 400 6 in[17]
+rlabel metal2 s 30576 0 30632 400 6 in[17]
 port 10 nsew signal input
-rlabel metal2 s 38304 0 38360 400 6 in[18]
+rlabel metal2 s 11424 0 11480 400 6 in[1]
 port 11 nsew signal input
-rlabel metal3 s 0 16464 400 16520 6 in[1]
+rlabel metal2 s 15792 0 15848 400 6 in[2]
 port 12 nsew signal input
-rlabel metal2 s 18480 0 18536 400 6 in[2]
+rlabel metal2 s 13440 0 13496 400 6 in[3]
 port 13 nsew signal input
-rlabel metal2 s 14784 0 14840 400 6 in[3]
+rlabel metal2 s 12096 0 12152 400 6 in[4]
 port 14 nsew signal input
-rlabel metal3 s 0 14784 400 14840 6 in[4]
+rlabel metal2 s 12432 0 12488 400 6 in[5]
 port 15 nsew signal input
-rlabel metal2 s 14112 0 14168 400 6 in[5]
+rlabel metal2 s 10752 0 10808 400 6 in[6]
 port 16 nsew signal input
-rlabel metal3 s 0 15792 400 15848 6 in[6]
+rlabel metal2 s 11088 0 11144 400 6 in[7]
 port 17 nsew signal input
-rlabel metal3 s 0 16128 400 16184 6 in[7]
+rlabel metal2 s 11760 0 11816 400 6 in[8]
 port 18 nsew signal input
-rlabel metal3 s 0 15456 400 15512 6 in[8]
-port 19 nsew signal input
 rlabel metal2 s 13104 0 13160 400 6 in[9]
-port 20 nsew signal input
-rlabel metal2 s 20496 0 20552 400 6 out[0]
+port 19 nsew signal input
+rlabel metal2 s 20832 0 20888 400 6 out[0]
+port 20 nsew signal output
+rlabel metal3 s 49600 10752 50000 10808 6 out[10]
 port 21 nsew signal output
-rlabel metal3 s 59600 19488 60000 19544 6 out[10]
+rlabel metal3 s 49600 11088 50000 11144 6 out[11]
 port 22 nsew signal output
-rlabel metal3 s 59600 19152 60000 19208 6 out[11]
+rlabel metal2 s 17472 0 17528 400 6 out[1]
 port 23 nsew signal output
-rlabel metal2 s 15456 0 15512 400 6 out[1]
+rlabel metal2 s 19824 0 19880 400 6 out[2]
 port 24 nsew signal output
-rlabel metal2 s 18144 0 18200 400 6 out[2]
+rlabel metal2 s 28560 0 28616 400 6 out[3]
 port 25 nsew signal output
-rlabel metal2 s 38640 0 38696 400 6 out[3]
+rlabel metal2 s 28224 0 28280 400 6 out[4]
 port 26 nsew signal output
-rlabel metal2 s 37632 0 37688 400 6 out[4]
+rlabel metal2 s 27888 0 27944 400 6 out[5]
 port 27 nsew signal output
-rlabel metal2 s 37968 0 38024 400 6 out[5]
+rlabel metal3 s 49600 12432 50000 12488 6 out[6]
 port 28 nsew signal output
-rlabel metal3 s 59600 21504 60000 21560 6 out[6]
+rlabel metal3 s 49600 11760 50000 11816 6 out[7]
 port 29 nsew signal output
-rlabel metal3 s 59600 21168 60000 21224 6 out[7]
+rlabel metal3 s 49600 12096 50000 12152 6 out[8]
 port 30 nsew signal output
-rlabel metal3 s 59600 20832 60000 20888 6 out[8]
+rlabel metal3 s 49600 11424 50000 11480 6 out[9]
 port 31 nsew signal output
-rlabel metal3 s 59600 20496 60000 20552 6 out[9]
-port 32 nsew signal output
 rlabel metal2 s 0 0 56 400 6 rst_n
-port 33 nsew signal input
-rlabel metal4 s 2224 1538 2384 58438 6 vdd
-port 34 nsew power bidirectional
-rlabel metal4 s 17584 1538 17744 58438 6 vdd
-port 34 nsew power bidirectional
-rlabel metal4 s 32944 1538 33104 58438 6 vdd
-port 34 nsew power bidirectional
-rlabel metal4 s 48304 1538 48464 58438 6 vdd
-port 34 nsew power bidirectional
-rlabel metal4 s 9904 1538 10064 58438 6 vss
-port 35 nsew ground bidirectional
-rlabel metal4 s 25264 1538 25424 58438 6 vss
-port 35 nsew ground bidirectional
-rlabel metal4 s 40624 1538 40784 58438 6 vss
-port 35 nsew ground bidirectional
-rlabel metal4 s 55984 1538 56144 58438 6 vss
-port 35 nsew ground bidirectional
+port 32 nsew signal input
+rlabel metal4 s 2224 1538 2384 48246 6 vdd
+port 33 nsew power bidirectional
+rlabel metal4 s 17584 1538 17744 48246 6 vdd
+port 33 nsew power bidirectional
+rlabel metal4 s 32944 1538 33104 48246 6 vdd
+port 33 nsew power bidirectional
+rlabel metal4 s 48304 1538 48464 48246 6 vdd
+port 33 nsew power bidirectional
+rlabel metal4 s 9904 1538 10064 48246 6 vss
+port 34 nsew ground bidirectional
+rlabel metal4 s 25264 1538 25424 48246 6 vss
+port 34 nsew ground bidirectional
+rlabel metal4 s 40624 1538 40784 48246 6 vss
+port 34 nsew ground bidirectional
 << properties >>
-string FIXED_BBOX 0 0 60000 60000
+string FIXED_BBOX 0 0 50000 50000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 6047754
-string GDS_FILE /home/htamas/test/caravel_user_project/openlane/unigate/runs/23_12_12_06_27/results/signoff/unigate.magic.gds
-string GDS_START 469442
+string GDS_END 5719984
+string GDS_FILE /home/htamas/progs/gfmpw1-multi.v2/openlane/unigate/runs/23_12_13_05_13/results/signoff/unigate.magic.gds
+string GDS_START 466918
 << end >>
 

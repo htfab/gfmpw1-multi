@@ -6,7 +6,7 @@ module output_mux (
     inout vss,	// User area 1 digital ground
 `endif
     input [`SEL_BITS-1:0] sel,
-    input [4*`OUTPUT_BITS-1:0] proj_out,
+    input [`NUM_DESIGNS*`OUTPUT_BITS-1:0] proj_out,
     output [`OUTPUT_BITS-1:0] out
 );
 

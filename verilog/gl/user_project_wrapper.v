@@ -49,7 +49,6 @@ module user_project_wrapper (user_clock2,
  wire \in[15] ;
  wire \in[16] ;
  wire \in[17] ;
- wire \in[18] ;
  wire \in[1] ;
  wire \in[2] ;
  wire \in[3] ;
@@ -75,11 +74,59 @@ module user_project_wrapper (user_clock2,
  wire \proj_clk[1] ;
  wire \proj_clk[2] ;
  wire \proj_clk[3] ;
+ wire \proj_clk[4] ;
+ wire \proj_clk[5] ;
+ wire \proj_clk[6] ;
+ wire \proj_clk[7] ;
  wire \proj_in[0] ;
+ wire \proj_in[100] ;
+ wire \proj_in[101] ;
+ wire \proj_in[102] ;
+ wire \proj_in[103] ;
+ wire \proj_in[104] ;
+ wire \proj_in[105] ;
+ wire \proj_in[106] ;
+ wire \proj_in[107] ;
+ wire \proj_in[108] ;
+ wire \proj_in[109] ;
  wire \proj_in[10] ;
+ wire \proj_in[110] ;
+ wire \proj_in[111] ;
+ wire \proj_in[112] ;
+ wire \proj_in[113] ;
+ wire \proj_in[114] ;
+ wire \proj_in[115] ;
+ wire \proj_in[116] ;
+ wire \proj_in[117] ;
+ wire \proj_in[118] ;
+ wire \proj_in[119] ;
  wire \proj_in[11] ;
+ wire \proj_in[120] ;
+ wire \proj_in[121] ;
+ wire \proj_in[122] ;
+ wire \proj_in[123] ;
+ wire \proj_in[124] ;
+ wire \proj_in[125] ;
+ wire \proj_in[126] ;
+ wire \proj_in[127] ;
+ wire \proj_in[128] ;
+ wire \proj_in[129] ;
  wire \proj_in[12] ;
+ wire \proj_in[130] ;
+ wire \proj_in[131] ;
+ wire \proj_in[132] ;
+ wire \proj_in[133] ;
+ wire \proj_in[134] ;
+ wire \proj_in[135] ;
+ wire \proj_in[136] ;
+ wire \proj_in[137] ;
+ wire \proj_in[138] ;
+ wire \proj_in[139] ;
  wire \proj_in[13] ;
+ wire \proj_in[140] ;
+ wire \proj_in[141] ;
+ wire \proj_in[142] ;
+ wire \proj_in[143] ;
  wire \proj_in[14] ;
  wire \proj_in[15] ;
  wire \proj_in[16] ;
@@ -148,8 +195,32 @@ module user_project_wrapper (user_clock2,
  wire \proj_in[73] ;
  wire \proj_in[74] ;
  wire \proj_in[75] ;
+ wire \proj_in[76] ;
+ wire \proj_in[77] ;
+ wire \proj_in[78] ;
+ wire \proj_in[79] ;
  wire \proj_in[7] ;
+ wire \proj_in[80] ;
+ wire \proj_in[81] ;
+ wire \proj_in[82] ;
+ wire \proj_in[83] ;
+ wire \proj_in[84] ;
+ wire \proj_in[85] ;
+ wire \proj_in[86] ;
+ wire \proj_in[87] ;
+ wire \proj_in[88] ;
+ wire \proj_in[89] ;
  wire \proj_in[8] ;
+ wire \proj_in[90] ;
+ wire \proj_in[91] ;
+ wire \proj_in[92] ;
+ wire \proj_in[93] ;
+ wire \proj_in[94] ;
+ wire \proj_in[95] ;
+ wire \proj_in[96] ;
+ wire \proj_in[97] ;
+ wire \proj_in[98] ;
+ wire \proj_in[99] ;
  wire \proj_in[9] ;
  wire \proj_out[0] ;
  wire \proj_out[10] ;
@@ -193,130 +264,74 @@ module user_project_wrapper (user_clock2,
  wire \proj_out[45] ;
  wire \proj_out[46] ;
  wire \proj_out[47] ;
+ wire \proj_out[48] ;
+ wire \proj_out[49] ;
  wire \proj_out[4] ;
+ wire \proj_out[50] ;
+ wire \proj_out[51] ;
+ wire \proj_out[52] ;
+ wire \proj_out[53] ;
+ wire \proj_out[54] ;
+ wire \proj_out[55] ;
+ wire \proj_out[56] ;
+ wire \proj_out[57] ;
+ wire \proj_out[58] ;
+ wire \proj_out[59] ;
  wire \proj_out[5] ;
+ wire \proj_out[60] ;
+ wire \proj_out[61] ;
+ wire \proj_out[62] ;
+ wire \proj_out[63] ;
+ wire \proj_out[64] ;
+ wire \proj_out[65] ;
+ wire \proj_out[66] ;
+ wire \proj_out[67] ;
+ wire \proj_out[68] ;
+ wire \proj_out[69] ;
  wire \proj_out[6] ;
+ wire \proj_out[70] ;
+ wire \proj_out[71] ;
+ wire \proj_out[72] ;
+ wire \proj_out[73] ;
+ wire \proj_out[74] ;
+ wire \proj_out[75] ;
+ wire \proj_out[76] ;
+ wire \proj_out[77] ;
+ wire \proj_out[78] ;
+ wire \proj_out[79] ;
  wire \proj_out[7] ;
+ wire \proj_out[80] ;
+ wire \proj_out[81] ;
+ wire \proj_out[82] ;
+ wire \proj_out[83] ;
+ wire \proj_out[84] ;
+ wire \proj_out[85] ;
+ wire \proj_out[86] ;
+ wire \proj_out[87] ;
+ wire \proj_out[88] ;
+ wire \proj_out[89] ;
  wire \proj_out[8] ;
+ wire \proj_out[90] ;
+ wire \proj_out[91] ;
+ wire \proj_out[92] ;
+ wire \proj_out[93] ;
+ wire \proj_out[94] ;
+ wire \proj_out[95] ;
  wire \proj_out[9] ;
  wire \proj_rst_n[0] ;
  wire \proj_rst_n[1] ;
  wire \proj_rst_n[2] ;
  wire \proj_rst_n[3] ;
+ wire \proj_rst_n[4] ;
+ wire \proj_rst_n[5] ;
+ wire \proj_rst_n[6] ;
+ wire \proj_rst_n[7] ;
  wire rst_n;
  wire \sel[0] ;
  wire \sel[1] ;
+ wire \sel[2] ;
 
- input_mux im (.clk(clk),
-    .rst_n(rst_n),
-    .vdd(vdd),
-    .vss(vss),
-    .in({\in[18] ,
-    \in[17] ,
-    \in[16] ,
-    \in[15] ,
-    \in[14] ,
-    \in[13] ,
-    \in[12] ,
-    \in[11] ,
-    \in[10] ,
-    \in[9] ,
-    \in[8] ,
-    \in[7] ,
-    \in[6] ,
-    \in[5] ,
-    \in[4] ,
-    \in[3] ,
-    \in[2] ,
-    \in[1] ,
-    \in[0] }),
-    .proj_clk({\proj_clk[3] ,
-    \proj_clk[2] ,
-    \proj_clk[1] ,
-    \proj_clk[0] }),
-    .proj_in({\proj_in[75] ,
-    \proj_in[74] ,
-    \proj_in[73] ,
-    \proj_in[72] ,
-    \proj_in[71] ,
-    \proj_in[70] ,
-    \proj_in[69] ,
-    \proj_in[68] ,
-    \proj_in[67] ,
-    \proj_in[66] ,
-    \proj_in[65] ,
-    \proj_in[64] ,
-    \proj_in[63] ,
-    \proj_in[62] ,
-    \proj_in[61] ,
-    \proj_in[60] ,
-    \proj_in[59] ,
-    \proj_in[58] ,
-    \proj_in[57] ,
-    \proj_in[56] ,
-    \proj_in[55] ,
-    \proj_in[54] ,
-    \proj_in[53] ,
-    \proj_in[52] ,
-    \proj_in[51] ,
-    \proj_in[50] ,
-    \proj_in[49] ,
-    \proj_in[48] ,
-    \proj_in[47] ,
-    \proj_in[46] ,
-    \proj_in[45] ,
-    \proj_in[44] ,
-    \proj_in[43] ,
-    \proj_in[42] ,
-    \proj_in[41] ,
-    \proj_in[40] ,
-    \proj_in[39] ,
-    \proj_in[38] ,
-    \proj_in[37] ,
-    \proj_in[36] ,
-    \proj_in[35] ,
-    \proj_in[34] ,
-    \proj_in[33] ,
-    \proj_in[32] ,
-    \proj_in[31] ,
-    \proj_in[30] ,
-    \proj_in[29] ,
-    \proj_in[28] ,
-    \proj_in[27] ,
-    \proj_in[26] ,
-    \proj_in[25] ,
-    \proj_in[24] ,
-    \proj_in[23] ,
-    \proj_in[22] ,
-    \proj_in[21] ,
-    \proj_in[20] ,
-    \proj_in[19] ,
-    \proj_in[18] ,
-    \proj_in[17] ,
-    \proj_in[16] ,
-    \proj_in[15] ,
-    \proj_in[14] ,
-    \proj_in[13] ,
-    \proj_in[12] ,
-    \proj_in[11] ,
-    \proj_in[10] ,
-    \proj_in[9] ,
-    \proj_in[8] ,
-    \proj_in[7] ,
-    \proj_in[6] ,
-    \proj_in[5] ,
-    \proj_in[4] ,
-    \proj_in[3] ,
-    \proj_in[2] ,
-    \proj_in[1] ,
-    \proj_in[0] }),
-    .proj_rst_n({\proj_rst_n[3] ,
-    \proj_rst_n[2] ,
-    \proj_rst_n[1] ,
-    \proj_rst_n[0] }),
-    .sel({\sel[1] ,
-    \sel[0] }));
- mux_wrapper mw (.clk(clk),
+ caravel_if ci (.clk(clk),
     .rst_n(rst_n),
     .user_clock2(user_clock2),
     .vdd(vdd),
@@ -327,8 +342,7 @@ module user_project_wrapper (user_clock2,
     .wbs_cyc_i(wbs_cyc_i),
     .wbs_stb_i(wbs_stb_i),
     .wbs_we_i(wbs_we_i),
-    .in({\in[18] ,
-    \in[17] ,
+    .in({\in[17] ,
     \in[16] ,
     \in[15] ,
     \in[14] ,
@@ -664,7 +678,8 @@ module user_project_wrapper (user_clock2,
     \out[2] ,
     \out[1] ,
     \out[0] }),
-    .sel({\sel[1] ,
+    .sel({\sel[2] ,
+    \sel[1] ,
     \sel[0] }),
     .user_irq({user_irq[2],
     user_irq[1],
@@ -769,6 +784,191 @@ module user_project_wrapper (user_clock2,
     wbs_sel_i[2],
     wbs_sel_i[1],
     wbs_sel_i[0]}));
+ input_mux im (.clk(clk),
+    .rst_n(rst_n),
+    .vdd(vdd),
+    .vss(vss),
+    .in({\in[17] ,
+    \in[16] ,
+    \in[15] ,
+    \in[14] ,
+    \in[13] ,
+    \in[12] ,
+    \in[11] ,
+    \in[10] ,
+    \in[9] ,
+    \in[8] ,
+    \in[7] ,
+    \in[6] ,
+    \in[5] ,
+    \in[4] ,
+    \in[3] ,
+    \in[2] ,
+    \in[1] ,
+    \in[0] }),
+    .proj_clk({\proj_clk[7] ,
+    \proj_clk[6] ,
+    \proj_clk[5] ,
+    \proj_clk[4] ,
+    \proj_clk[3] ,
+    \proj_clk[2] ,
+    \proj_clk[1] ,
+    \proj_clk[0] }),
+    .proj_in({\proj_in[143] ,
+    \proj_in[142] ,
+    \proj_in[141] ,
+    \proj_in[140] ,
+    \proj_in[139] ,
+    \proj_in[138] ,
+    \proj_in[137] ,
+    \proj_in[136] ,
+    \proj_in[135] ,
+    \proj_in[134] ,
+    \proj_in[133] ,
+    \proj_in[132] ,
+    \proj_in[131] ,
+    \proj_in[130] ,
+    \proj_in[129] ,
+    \proj_in[128] ,
+    \proj_in[127] ,
+    \proj_in[126] ,
+    \proj_in[125] ,
+    \proj_in[124] ,
+    \proj_in[123] ,
+    \proj_in[122] ,
+    \proj_in[121] ,
+    \proj_in[120] ,
+    \proj_in[119] ,
+    \proj_in[118] ,
+    \proj_in[117] ,
+    \proj_in[116] ,
+    \proj_in[115] ,
+    \proj_in[114] ,
+    \proj_in[113] ,
+    \proj_in[112] ,
+    \proj_in[111] ,
+    \proj_in[110] ,
+    \proj_in[109] ,
+    \proj_in[108] ,
+    \proj_in[107] ,
+    \proj_in[106] ,
+    \proj_in[105] ,
+    \proj_in[104] ,
+    \proj_in[103] ,
+    \proj_in[102] ,
+    \proj_in[101] ,
+    \proj_in[100] ,
+    \proj_in[99] ,
+    \proj_in[98] ,
+    \proj_in[97] ,
+    \proj_in[96] ,
+    \proj_in[95] ,
+    \proj_in[94] ,
+    \proj_in[93] ,
+    \proj_in[92] ,
+    \proj_in[91] ,
+    \proj_in[90] ,
+    \proj_in[89] ,
+    \proj_in[88] ,
+    \proj_in[87] ,
+    \proj_in[86] ,
+    \proj_in[85] ,
+    \proj_in[84] ,
+    \proj_in[83] ,
+    \proj_in[82] ,
+    \proj_in[81] ,
+    \proj_in[80] ,
+    \proj_in[79] ,
+    \proj_in[78] ,
+    \proj_in[77] ,
+    \proj_in[76] ,
+    \proj_in[75] ,
+    \proj_in[74] ,
+    \proj_in[73] ,
+    \proj_in[72] ,
+    \proj_in[71] ,
+    \proj_in[70] ,
+    \proj_in[69] ,
+    \proj_in[68] ,
+    \proj_in[67] ,
+    \proj_in[66] ,
+    \proj_in[65] ,
+    \proj_in[64] ,
+    \proj_in[63] ,
+    \proj_in[62] ,
+    \proj_in[61] ,
+    \proj_in[60] ,
+    \proj_in[59] ,
+    \proj_in[58] ,
+    \proj_in[57] ,
+    \proj_in[56] ,
+    \proj_in[55] ,
+    \proj_in[54] ,
+    \proj_in[53] ,
+    \proj_in[52] ,
+    \proj_in[51] ,
+    \proj_in[50] ,
+    \proj_in[49] ,
+    \proj_in[48] ,
+    \proj_in[47] ,
+    \proj_in[46] ,
+    \proj_in[45] ,
+    \proj_in[44] ,
+    \proj_in[43] ,
+    \proj_in[42] ,
+    \proj_in[41] ,
+    \proj_in[40] ,
+    \proj_in[39] ,
+    \proj_in[38] ,
+    \proj_in[37] ,
+    \proj_in[36] ,
+    \proj_in[35] ,
+    \proj_in[34] ,
+    \proj_in[33] ,
+    \proj_in[32] ,
+    \proj_in[31] ,
+    \proj_in[30] ,
+    \proj_in[29] ,
+    \proj_in[28] ,
+    \proj_in[27] ,
+    \proj_in[26] ,
+    \proj_in[25] ,
+    \proj_in[24] ,
+    \proj_in[23] ,
+    \proj_in[22] ,
+    \proj_in[21] ,
+    \proj_in[20] ,
+    \proj_in[19] ,
+    \proj_in[18] ,
+    \proj_in[17] ,
+    \proj_in[16] ,
+    \proj_in[15] ,
+    \proj_in[14] ,
+    \proj_in[13] ,
+    \proj_in[12] ,
+    \proj_in[11] ,
+    \proj_in[10] ,
+    \proj_in[9] ,
+    \proj_in[8] ,
+    \proj_in[7] ,
+    \proj_in[6] ,
+    \proj_in[5] ,
+    \proj_in[4] ,
+    \proj_in[3] ,
+    \proj_in[2] ,
+    \proj_in[1] ,
+    \proj_in[0] }),
+    .proj_rst_n({\proj_rst_n[7] ,
+    \proj_rst_n[6] ,
+    \proj_rst_n[5] ,
+    \proj_rst_n[4] ,
+    \proj_rst_n[3] ,
+    \proj_rst_n[2] ,
+    \proj_rst_n[1] ,
+    \proj_rst_n[0] }),
+    .sel({\sel[2] ,
+    \sel[1] ,
+    \sel[0] }));
  output_mux om (.vdd(vdd),
     .vss(vss),
     .out({\out[11] ,
@@ -783,7 +983,55 @@ module user_project_wrapper (user_clock2,
     \out[2] ,
     \out[1] ,
     \out[0] }),
-    .proj_out({\proj_out[47] ,
+    .proj_out({\proj_out[95] ,
+    \proj_out[94] ,
+    \proj_out[93] ,
+    \proj_out[92] ,
+    \proj_out[91] ,
+    \proj_out[90] ,
+    \proj_out[89] ,
+    \proj_out[88] ,
+    \proj_out[87] ,
+    \proj_out[86] ,
+    \proj_out[85] ,
+    \proj_out[84] ,
+    \proj_out[83] ,
+    \proj_out[82] ,
+    \proj_out[81] ,
+    \proj_out[80] ,
+    \proj_out[79] ,
+    \proj_out[78] ,
+    \proj_out[77] ,
+    \proj_out[76] ,
+    \proj_out[75] ,
+    \proj_out[74] ,
+    \proj_out[73] ,
+    \proj_out[72] ,
+    \proj_out[71] ,
+    \proj_out[70] ,
+    \proj_out[69] ,
+    \proj_out[68] ,
+    \proj_out[67] ,
+    \proj_out[66] ,
+    \proj_out[65] ,
+    \proj_out[64] ,
+    \proj_out[63] ,
+    \proj_out[62] ,
+    \proj_out[61] ,
+    \proj_out[60] ,
+    \proj_out[59] ,
+    \proj_out[58] ,
+    \proj_out[57] ,
+    \proj_out[56] ,
+    \proj_out[55] ,
+    \proj_out[54] ,
+    \proj_out[53] ,
+    \proj_out[52] ,
+    \proj_out[51] ,
+    \proj_out[50] ,
+    \proj_out[49] ,
+    \proj_out[48] ,
+    \proj_out[47] ,
     \proj_out[46] ,
     \proj_out[45] ,
     \proj_out[44] ,
@@ -831,14 +1079,14 @@ module user_project_wrapper (user_clock2,
     \proj_out[2] ,
     \proj_out[1] ,
     \proj_out[0] }),
-    .sel({\sel[1] ,
+    .sel({\sel[2] ,
+    \sel[1] ,
     \sel[0] }));
  rotfpga2a p0 (.clk(\proj_clk[0] ),
     .rst_n(\proj_rst_n[0] ),
     .vdd(vdd),
     .vss(vss),
-    .in({\proj_in[18] ,
-    \proj_in[17] ,
+    .in({\proj_in[17] ,
     \proj_in[16] ,
     \proj_in[15] ,
     \proj_in[14] ,
@@ -872,9 +1120,7 @@ module user_project_wrapper (user_clock2,
     .rst_n(\proj_rst_n[1] ),
     .vdd(vdd),
     .vss(vss),
-    .in({\proj_in[37] ,
-    \proj_in[36] ,
-    \proj_in[35] ,
+    .in({\proj_in[35] ,
     \proj_in[34] ,
     \proj_in[33] ,
     \proj_in[32] ,
@@ -890,7 +1136,8 @@ module user_project_wrapper (user_clock2,
     \proj_in[22] ,
     \proj_in[21] ,
     \proj_in[20] ,
-    \proj_in[19] }),
+    \proj_in[19] ,
+    \proj_in[18] }),
     .out({\proj_out[23] ,
     \proj_out[22] ,
     \proj_out[21] ,
@@ -907,10 +1154,7 @@ module user_project_wrapper (user_clock2,
     .rst_n(\proj_rst_n[2] ),
     .vdd(vdd),
     .vss(vss),
-    .in({\proj_in[56] ,
-    \proj_in[55] ,
-    \proj_in[54] ,
-    \proj_in[53] ,
+    .in({\proj_in[53] ,
     \proj_in[52] ,
     \proj_in[51] ,
     \proj_in[50] ,
@@ -925,7 +1169,9 @@ module user_project_wrapper (user_clock2,
     \proj_in[41] ,
     \proj_in[40] ,
     \proj_in[39] ,
-    \proj_in[38] }),
+    \proj_in[38] ,
+    \proj_in[37] ,
+    \proj_in[36] }),
     .out({\proj_out[35] ,
     \proj_out[34] ,
     \proj_out[33] ,
@@ -942,11 +1188,7 @@ module user_project_wrapper (user_clock2,
     .rst_n(\proj_rst_n[3] ),
     .vdd(vdd),
     .vss(vss),
-    .in({\proj_in[75] ,
-    \proj_in[74] ,
-    \proj_in[73] ,
-    \proj_in[72] ,
-    \proj_in[71] ,
+    .in({\proj_in[71] ,
     \proj_in[70] ,
     \proj_in[69] ,
     \proj_in[68] ,
@@ -960,7 +1202,10 @@ module user_project_wrapper (user_clock2,
     \proj_in[60] ,
     \proj_in[59] ,
     \proj_in[58] ,
-    \proj_in[57] }),
+    \proj_in[57] ,
+    \proj_in[56] ,
+    \proj_in[55] ,
+    \proj_in[54] }),
     .out({\proj_out[47] ,
     \proj_out[46] ,
     \proj_out[45] ,
@@ -973,4 +1218,140 @@ module user_project_wrapper (user_clock2,
     \proj_out[38] ,
     \proj_out[37] ,
     \proj_out[36] }));
+ cells7 p4 (.clk(\proj_clk[4] ),
+    .rst_n(\proj_rst_n[4] ),
+    .vdd(vdd),
+    .vss(vss),
+    .in({\proj_in[89] ,
+    \proj_in[88] ,
+    \proj_in[87] ,
+    \proj_in[86] ,
+    \proj_in[85] ,
+    \proj_in[84] ,
+    \proj_in[83] ,
+    \proj_in[82] ,
+    \proj_in[81] ,
+    \proj_in[80] ,
+    \proj_in[79] ,
+    \proj_in[78] ,
+    \proj_in[77] ,
+    \proj_in[76] ,
+    \proj_in[75] ,
+    \proj_in[74] ,
+    \proj_in[73] ,
+    \proj_in[72] }),
+    .out({\proj_out[59] ,
+    \proj_out[58] ,
+    \proj_out[57] ,
+    \proj_out[56] ,
+    \proj_out[55] ,
+    \proj_out[54] ,
+    \proj_out[53] ,
+    \proj_out[52] ,
+    \proj_out[51] ,
+    \proj_out[50] ,
+    \proj_out[49] ,
+    \proj_out[48] }));
+ cells7 p5 (.clk(\proj_clk[3] ),
+    .rst_n(\proj_rst_n[3] ),
+    .vdd(vdd),
+    .vss(vss),
+    .in({\proj_in[107] ,
+    \proj_in[106] ,
+    \proj_in[105] ,
+    \proj_in[104] ,
+    \proj_in[103] ,
+    \proj_in[102] ,
+    \proj_in[101] ,
+    \proj_in[100] ,
+    \proj_in[99] ,
+    \proj_in[98] ,
+    \proj_in[97] ,
+    \proj_in[96] ,
+    \proj_in[95] ,
+    \proj_in[94] ,
+    \proj_in[93] ,
+    \proj_in[92] ,
+    \proj_in[91] ,
+    \proj_in[90] }),
+    .out({\proj_out[71] ,
+    \proj_out[70] ,
+    \proj_out[69] ,
+    \proj_out[68] ,
+    \proj_out[67] ,
+    \proj_out[66] ,
+    \proj_out[65] ,
+    \proj_out[64] ,
+    \proj_out[63] ,
+    \proj_out[62] ,
+    \proj_out[61] ,
+    \proj_out[60] }));
+ loopback7 p6 (.clk(\proj_clk[3] ),
+    .rst_n(\proj_rst_n[3] ),
+    .vdd(vdd),
+    .vss(vss),
+    .in({\proj_in[125] ,
+    \proj_in[124] ,
+    \proj_in[123] ,
+    \proj_in[122] ,
+    \proj_in[121] ,
+    \proj_in[120] ,
+    \proj_in[119] ,
+    \proj_in[118] ,
+    \proj_in[117] ,
+    \proj_in[116] ,
+    \proj_in[115] ,
+    \proj_in[114] ,
+    \proj_in[113] ,
+    \proj_in[112] ,
+    \proj_in[111] ,
+    \proj_in[110] ,
+    \proj_in[109] ,
+    \proj_in[108] }),
+    .out({\proj_out[83] ,
+    \proj_out[82] ,
+    \proj_out[81] ,
+    \proj_out[80] ,
+    \proj_out[79] ,
+    \proj_out[78] ,
+    \proj_out[77] ,
+    \proj_out[76] ,
+    \proj_out[75] ,
+    \proj_out[74] ,
+    \proj_out[73] ,
+    \proj_out[72] }));
+ loopback7 p7 (.clk(\proj_clk[3] ),
+    .rst_n(\proj_rst_n[3] ),
+    .vdd(vdd),
+    .vss(vss),
+    .in({\proj_in[143] ,
+    \proj_in[142] ,
+    \proj_in[141] ,
+    \proj_in[140] ,
+    \proj_in[139] ,
+    \proj_in[138] ,
+    \proj_in[137] ,
+    \proj_in[136] ,
+    \proj_in[135] ,
+    \proj_in[134] ,
+    \proj_in[133] ,
+    \proj_in[132] ,
+    \proj_in[131] ,
+    \proj_in[130] ,
+    \proj_in[129] ,
+    \proj_in[128] ,
+    \proj_in[127] ,
+    \proj_in[126] }),
+    .out({\proj_out[95] ,
+    \proj_out[94] ,
+    \proj_out[93] ,
+    \proj_out[92] ,
+    \proj_out[91] ,
+    \proj_out[90] ,
+    \proj_out[89] ,
+    \proj_out[88] ,
+    \proj_out[87] ,
+    \proj_out[86] ,
+    \proj_out[85] ,
+    \proj_out[84] }));
 endmodule

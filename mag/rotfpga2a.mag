@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1702354384
+timestamp 1702442625
 << metal1 >>
 rect 1344 60394 62608 60428
 rect 1344 60342 4478 60394
@@ -56268,7 +56268,6 @@ rect 34300 800 34356 924
 rect 0 0 112 800
 rect 672 0 784 800
 rect 1344 0 1456 800
-rect 2016 0 2128 800
 rect 7392 0 7504 800
 rect 29568 0 29680 800
 rect 31584 0 31696 800
@@ -128541,60 +128540,58 @@ flabel metal3 s 63200 28224 64000 28336 0 FreeSans 448 0 0 0 in[16]
 port 8 nsew signal input
 flabel metal2 s 672 0 784 800 0 FreeSans 448 90 0 0 in[17]
 port 9 nsew signal input
-flabel metal2 s 1344 0 1456 800 0 FreeSans 448 90 0 0 in[18]
-port 10 nsew signal input
 flabel metal2 s 34272 0 34384 800 0 FreeSans 448 90 0 0 in[1]
-port 11 nsew signal input
+port 10 nsew signal input
 flabel metal3 s 63200 32928 64000 33040 0 FreeSans 448 0 0 0 in[2]
-port 12 nsew signal input
+port 11 nsew signal input
 flabel metal2 s 31584 0 31696 800 0 FreeSans 448 90 0 0 in[3]
-port 13 nsew signal input
+port 12 nsew signal input
 flabel metal2 s 29568 0 29680 800 0 FreeSans 448 90 0 0 in[4]
-port 14 nsew signal input
+port 13 nsew signal input
 flabel metal3 s 0 11424 800 11536 0 FreeSans 448 0 0 0 in[5]
-port 15 nsew signal input
+port 14 nsew signal input
 flabel metal3 s 0 24864 800 24976 0 FreeSans 448 0 0 0 in[6]
-port 16 nsew signal input
+port 15 nsew signal input
 flabel metal3 s 0 30912 800 31024 0 FreeSans 448 0 0 0 in[7]
-port 17 nsew signal input
+port 16 nsew signal input
 flabel metal3 s 0 44352 800 44464 0 FreeSans 448 0 0 0 in[8]
-port 18 nsew signal input
+port 17 nsew signal input
 flabel metal2 s 29568 63200 29680 64000 0 FreeSans 448 90 0 0 in[9]
-port 19 nsew signal input
+port 18 nsew signal input
 flabel metal3 s 63200 43008 64000 43120 0 FreeSans 448 0 0 0 out[0]
-port 20 nsew signal tristate
+port 19 nsew signal tristate
 flabel metal3 s 63200 58464 64000 58576 0 FreeSans 448 0 0 0 out[10]
-port 21 nsew signal tristate
+port 20 nsew signal tristate
 flabel metal2 s 38304 63200 38416 64000 0 FreeSans 448 90 0 0 out[11]
-port 22 nsew signal tristate
+port 21 nsew signal tristate
 flabel metal3 s 63200 30912 64000 31024 0 FreeSans 448 0 0 0 out[1]
-port 23 nsew signal tristate
+port 22 nsew signal tristate
 flabel metal2 s 38304 0 38416 800 0 FreeSans 448 90 0 0 out[2]
-port 24 nsew signal tristate
+port 23 nsew signal tristate
 flabel metal3 s 0 24192 800 24304 0 FreeSans 448 0 0 0 out[3]
-port 25 nsew signal tristate
+port 24 nsew signal tristate
 flabel metal3 s 0 33600 800 33712 0 FreeSans 448 0 0 0 out[4]
-port 26 nsew signal tristate
+port 25 nsew signal tristate
 flabel metal2 s 16128 63200 16240 64000 0 FreeSans 448 90 0 0 out[5]
-port 27 nsew signal tristate
+port 26 nsew signal tristate
 flabel metal2 s 26208 63200 26320 64000 0 FreeSans 448 90 0 0 out[6]
-port 28 nsew signal tristate
+port 27 nsew signal tristate
 flabel metal2 s 48384 63200 48496 64000 0 FreeSans 448 90 0 0 out[7]
-port 29 nsew signal tristate
+port 28 nsew signal tristate
 flabel metal2 s 47712 63200 47824 64000 0 FreeSans 448 90 0 0 out[8]
-port 30 nsew signal tristate
+port 29 nsew signal tristate
 flabel metal2 s 7392 0 7504 800 0 FreeSans 448 90 0 0 out[9]
-port 31 nsew signal tristate
-flabel metal2 s 2016 0 2128 800 0 FreeSans 448 90 0 0 rst_n
-port 32 nsew signal input
+port 30 nsew signal tristate
+flabel metal2 s 1344 0 1456 800 0 FreeSans 448 90 0 0 rst_n
+port 31 nsew signal input
 flabel metal4 s 4448 3076 4768 60428 0 FreeSans 1280 90 0 0 vdd
-port 33 nsew power bidirectional
+port 32 nsew power bidirectional
 flabel metal4 s 35168 3076 35488 60428 0 FreeSans 1280 90 0 0 vdd
-port 33 nsew power bidirectional
+port 32 nsew power bidirectional
 flabel metal4 s 19808 3076 20128 60428 0 FreeSans 1280 90 0 0 vss
-port 34 nsew ground bidirectional
+port 33 nsew ground bidirectional
 flabel metal4 s 50528 3076 50848 60428 0 FreeSans 1280 90 0 0 vss
-port 34 nsew ground bidirectional
+port 33 nsew ground bidirectional
 rlabel metal1 31976 60368 31976 60368 0 vdd
 rlabel metal1 31976 59584 31976 59584 0 vss
 rlabel metal3 30016 55160 30016 55160 0 _0000_

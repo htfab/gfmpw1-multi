@@ -69,10 +69,10 @@ wire rst_n;
 wire [`SEL_BITS-1:0] sel;
 wire [`INPUT_BITS-1:0] in;
 wire [`OUTPUT_BITS-1:0] out;
-wire [3:0] proj_clk;
-wire [3:0] proj_rst_n;
-wire [4*`INPUT_BITS-1:0] proj_in;
-wire [4*`OUTPUT_BITS-1:0] proj_out;
+wire [`NUM_DESIGNS-1:0] proj_clk;
+wire [`NUM_DESIGNS-1:0] proj_rst_n;
+wire [`NUM_DESIGNS*`INPUT_BITS-1:0] proj_in;
+wire [`NUM_DESIGNS*`OUTPUT_BITS-1:0] proj_out;
 
 `define SEL_START 0
 `define SEL_END (`SEL_BITS-1)
@@ -84,7 +84,7 @@ wire [4*`OUTPUT_BITS-1:0] proj_out;
 `define UNUSED_END (`MPRJ_IO_PADS-1)
 `define UNUSED_BITS (`MPRJ_IO_PADS-`UNUSED_START)
 
-mux_wrapper mw (
+caravel_if ci (
     .wb_clk_i,
     .wb_rst_i,
     .wbs_stb_i,
@@ -120,38 +120,66 @@ input_mux im (
     .proj_in
 );
 
+output_mux om (
+    .sel,
+    .proj_out,
+    .out,
+);
+
 rotfpga2a p0 (
     .clk(proj_clk[0]),
     .rst_n(proj_rst_n[0]),
-    .in(proj_in[`INPUT_BITS-1:0]),
-    .out(proj_out[`OUTPUT_BITS-1:0])
+    .in(proj_in[0+:`INPUT_BITS]),
+    .out(proj_out[0+:`OUTPUT_BITS])
 );
 
 rotfpga2b p1 (
     .clk(proj_clk[1]),
     .rst_n(proj_rst_n[1]),
-    .in(proj_in[2*`INPUT_BITS-1:`INPUT_BITS]),
-    .out(proj_out[2*`OUTPUT_BITS-1:`OUTPUT_BITS])
+    .in(proj_in[`INPUT_BITS+:`INPUT_BITS]),
+    .out(proj_out[`OUTPUT_BITS+:`OUTPUT_BITS])
 );
 
 totp p2 (
     .clk(proj_clk[2]),
     .rst_n(proj_rst_n[2]),
-    .in(proj_in[3*`INPUT_BITS-1:2*`INPUT_BITS]),
-    .out(proj_out[3*`OUTPUT_BITS-1:2*`OUTPUT_BITS])
+    .in(proj_in[2*`INPUT_BITS+:`INPUT_BITS]),
+    .out(proj_out[2*`OUTPUT_BITS+:`OUTPUT_BITS])
 );
 
 unigate p3 (
     .clk(proj_clk[3]),
     .rst_n(proj_rst_n[3]),
-    .in(proj_in[4*`INPUT_BITS-1:3*`INPUT_BITS]),
-    .out(proj_out[4*`OUTPUT_BITS-1:3*`OUTPUT_BITS])
+    .in(proj_in[3*`INPUT_BITS+:`INPUT_BITS]),
+    .out(proj_out[3*`OUTPUT_BITS+:`OUTPUT_BITS])
 );
 
-output_mux om (
-    .sel,
-    .proj_out,
-    .out,
+cells7 p4 (
+    .clk(proj_clk[4]),
+    .rst_n(proj_rst_n[4]),
+    .in(proj_in[4*`INPUT_BITS+:`INPUT_BITS]),
+    .out(proj_out[4*`OUTPUT_BITS+:`OUTPUT_BITS])
+);
+
+cells7 p5 (
+    .clk(proj_clk[3]),
+    .rst_n(proj_rst_n[3]),
+    .in(proj_in[5*`INPUT_BITS+:`INPUT_BITS]),
+    .out(proj_out[5*`OUTPUT_BITS+:`OUTPUT_BITS])
+);
+
+loopback7 p6 (
+    .clk(proj_clk[3]),
+    .rst_n(proj_rst_n[3]),
+    .in(proj_in[6*`INPUT_BITS+:`INPUT_BITS]),
+    .out(proj_out[6*`OUTPUT_BITS+:`OUTPUT_BITS])
+);
+
+loopback7 p7 (
+    .clk(proj_clk[3]),
+    .rst_n(proj_rst_n[3]),
+    .in(proj_in[7*`INPUT_BITS+:`INPUT_BITS]),
+    .out(proj_out[7*`OUTPUT_BITS+:`OUTPUT_BITS])
 );
 
 endmodule	// user_project_wrapper

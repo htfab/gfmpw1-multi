@@ -8,7 +8,7 @@ module rotfpga2a (clk,
  input rst_n;
  input vdd;
  input vss;
- input [18:0] in;
+ input [17:0] in;
  output [11:0] out;
 
  wire net136;

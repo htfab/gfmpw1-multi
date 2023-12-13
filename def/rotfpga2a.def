@@ -5676,7 +5676,7 @@ COMPONENTS 5580 ;
     - rotfpga2a_136 gf180mcu_fd_sc_mcu7t5v0__tiel + SOURCE TIMING + PLACED ( 619360 588000 ) FS ;
     - rotfpga2a_137 gf180mcu_fd_sc_mcu7t5v0__tiel + SOURCE TIMING + PLACED ( 384160 595840 ) FN ;
 END COMPONENTS
-PINS 35 ;
+PINS 34 ;
     - clk + NET clk + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER Metal2 ( -560 -4000 ) ( 560 4000 )
@@ -5717,10 +5717,6 @@ PINS 35 ;
       + PORT
         + LAYER Metal2 ( -560 -4000 ) ( 560 4000 )
         + PLACED ( 7280 4000 ) N ;
-    - in[18] + NET in[18] + DIRECTION INPUT + USE SIGNAL
-      + PORT
-        + LAYER Metal2 ( -560 -4000 ) ( 560 4000 )
-        + PLACED ( 14000 4000 ) N ;
     - in[1] + NET in[1] + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER Metal2 ( -560 -4000 ) ( 560 4000 )
@@ -5808,7 +5804,7 @@ PINS 35 ;
     - rst_n + NET rst_n + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER Metal2 ( -560 -4000 ) ( 560 4000 )
-        + PLACED ( 20720 4000 ) N ;
+        + PLACED ( 14000 4000 ) N ;
     - vdd + NET vdd + SPECIAL + DIRECTION INOUT + USE POWER
       + PORT
         + LAYER Metal4 ( -1600 -286760 ) ( 1600 286760 )
@@ -6346,7 +6342,7 @@ SPECIALNETS 2 ;
       NEW Metal2 0 + SHAPE STRIPE ( 199680 31360 ) via2_3_3200_1200_1_3_1040_1040
       NEW Metal1 0 + SHAPE STRIPE ( 199680 31360 ) via1_2_3200_1200_1_3_1040_1040 ;
 END SPECIALNETS
-NETS 2422 ;
+NETS 2421 ;
     - _0000_ ( _3592_ I0 ) ( _2322_ A2 ) ( _2321_ ZN ) + USE SIGNAL
       + ROUTED Metal3 ( 280560 551600 ) ( 319760 * )
       NEW Metal3 ( 280560 550480 ) ( * 551600 )
@@ -43127,7 +43123,6 @@ NETS 2422 ;
       NEW Metal2 ( 603120 282800 ) Via2_VH
       NEW Metal2 ( 622160 170800 ) RECT ( -280 -660 280 0 )  ;
     - in[17] ( PIN in[17] ) + USE SIGNAL ;
-    - in[18] ( PIN in[18] ) + USE SIGNAL ;
     - in[1] ( PIN in[1] ) ( ANTENNA_input9_I I ) ( input9 I ) + USE SIGNAL
       + ROUTED Metal2 ( 479920 36400 ) ( * 46480 )
       NEW Metal2 ( 343280 7280 0 ) ( * 9520 )

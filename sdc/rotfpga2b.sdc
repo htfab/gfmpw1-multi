@@ -1,6 +1,6 @@
 ###############################################################################
 # Created by write_sdc
-# Tue Dec 12 03:39:52 2023
+# Wed Dec 13 05:25:55 2023
 ###############################################################################
 current_design rotfpga2b
 ###############################################################################
@@ -6033,8 +6033,6 @@ set_load -pin_load 0.1900 [get_ports {out[2]}]
 set_load -pin_load 0.1900 [get_ports {out[1]}]
 set_load -pin_load 0.1900 [get_ports {out[0]}]
 set_input_transition 0.6100 [get_ports {clk}]
-set_input_transition -min 0.0500 [get_ports {in[18]}]
-set_input_transition -max 0.3800 [get_ports {in[18]}]
 set_input_transition -min 0.0500 [get_ports {in[17]}]
 set_input_transition -max 0.3800 [get_ports {in[17]}]
 set_input_transition -min 0.0500 [get_ports {in[16]}]

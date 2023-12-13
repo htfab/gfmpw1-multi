@@ -1,9 +1,9 @@
 {
-	"PDK": "gf180mcuD",
-	"STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
-	"DESIGN_NAME": "totp",
-	"VERILOG_FILES": [
-		"dir::../../verilog/rtl/params.v",
+    "PDK": "gf180mcuD",
+    "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
+    "DESIGN_NAME": "totp",
+    "VERILOG_FILES": [
+        "dir::../../verilog/rtl/params.v",
         "dir::../../verilog/rtl/totp/sha1_magic.v",
         "dir::../../verilog/rtl/totp/sha1_mixer.v",
         "dir::../../verilog/rtl/totp/sha1_block.v",
@@ -13,28 +13,28 @@
         "dir::../../verilog/rtl/totp/hotp.v",
         "dir::../../verilog/rtl/totp/seg_magic.v",
         "dir::../../verilog/rtl/totp/stream.v",
-		"dir::../../verilog/rtl/totp/totp.v"
-	],
+        "dir::../../verilog/rtl/totp/totp.v"
+    ],
     "RSZ_DONT_TOUCH_RX": "_notouch_",
-	"DESIGN_IS_CORE": 0,
-	"CLOCK_PORT": "clk",
-	"CLOCK_NET": "clk",
-	"CLOCK_PERIOD": "24.0",
-	"FP_SIZING": "absolute",
-	"DIE_AREA": "0 0 600 500",
-	"PL_BASIC_PLACEMENT": 0,
-	"PL_TARGET_DENSITY": 0.7,
-	"FP_CORE_UTIL": 40,
-	"MAX_FANOUT_CONSTRAINT": 4,
-	"RT_MAX_LAYER": "Metal4",
-	"VDD_NETS": [
-		"vdd"
-	],
-	"GND_NETS": [
-		"vss"
-	],
+    "DESIGN_IS_CORE": 0,
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "clk",
+    "CLOCK_PERIOD": "24.0",
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 600 500",
+    "PL_BASIC_PLACEMENT": 0,
+    "PL_TARGET_DENSITY": 0.7,
+    "FP_CORE_UTIL": 40,
+    "MAX_FANOUT_CONSTRAINT": 4,
+    "RT_MAX_LAYER": "Metal4",
+    "VDD_NETS": [
+        "vdd"
+    ],
+    "GND_NETS": [
+        "vss"
+    ],
     "BASE_SDC_FILE": "dir::base_totp.sdc",
-	"RUN_HEURISTIC_DIODE_INSERTION": 1,
-	"RUN_CVC": 1,
-	"QUIT_ON_LINTER_ERRORS": 0
+    "RUN_HEURISTIC_DIODE_INSERTION": 1,
+    "RUN_CVC": 1,
+    "QUIT_ON_LINTER_ERRORS": 0
 }

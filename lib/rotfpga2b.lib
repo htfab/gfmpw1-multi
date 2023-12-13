@@ -28,8 +28,8 @@ library (rotfpga2b) {
   type ("in") {
     base_type : array;
     data_type : bit;
-    bit_width : 19;
-    bit_from : 18;
+    bit_width : 18;
+    bit_from : 17;
     bit_to : 0;
   }
   type ("out") {
@@ -62,10 +62,6 @@ library (rotfpga2b) {
       bus_type : in;
       direction : input;
       capacitance : 0.0000;
-    pin("in[18]") {
-      direction : input;
-      capacitance : 0.0000;
-    }
     pin("in[17]") {
       direction : input;
       capacitance : 0.0000;
